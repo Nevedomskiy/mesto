@@ -26,7 +26,6 @@
 
 /* Стили editButton */
 @import url(../blocks/editButton/editButton.css);
-@import url(../blocks/editButton/__icon/editButton__icon.css);
 
 /* Стили addButton */
 @import url(../blocks/addButton/addButton.css);
@@ -53,3 +52,4 @@
 @import url(../blocks/popup/__text/_type/_name/popup__text_type_name.css);
 @import url(../blocks/popup/__text/_type/_profession/popup__text_type_profession.css);
 @import url(../blocks/popup/__submit-btn/popup__submit-btn.css);
+@import url(../blocks/popup/_opened/popup_opened.css);

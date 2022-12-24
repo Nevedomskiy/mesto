@@ -5,6 +5,8 @@
    background-size: cover;
    background-position: 0;
    background-repeat: no-repeat;
+   cursor: pointer;
+   border: none;
 }
 
 .photo__like:hover {
