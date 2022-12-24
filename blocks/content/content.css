@@ -1,0 +1,10 @@
+.content {
+   margin: 0 19px;
+   border-top: 1px solid #545454;
+}
+
+@media screen and (min-width: 1024px) {
+   .content {
+      margin: 0 200px;
+   }
+}

@@ -1,0 +1,17 @@
+.photo__like {
+   min-width: 22px;
+   min-height: 19px;
+   background-image: url(../../../images/serd.svg);
+   background-size: cover;
+   background-position: 0;
+   background-repeat: no-repeat;
+}
+
+.photo__like:hover {
+   opacity: 0.5;
+}
+
+.photo__like:active {
+   opacity: 1;
+   background: url(../../../images/serdBlack.svg) 0 0/ cover no-repeat;
+}

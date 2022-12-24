@@ -1,0 +1,11 @@
+.editButton__icon {
+   display: block;
+   padding: 5.25px;
+
+}
+
+@media screen and (min-width: 1024px) {
+   .editButton__icon {
+      padding: 7px;
+   }
+}

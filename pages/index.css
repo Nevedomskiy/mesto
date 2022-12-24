@@ -1,0 +1,45 @@
+/* Подключаем normalize */
+@import url(../vendor/styles/normalize.css);
+
+/* Подключаем fonts */
+@import url(../vendor/fonts/fonts.css);
+
+/* Стили bodywork */
+@import url(../blocks/bodywork/bodywork.css);
+
+/* Стили page */
+@import url(../blocks//page/page.css);
+
+/* Стили container */
+@import url(../blocks/content/content.css);
+
+/* Стили header */
+@import url(../blocks/header/header.css);
+
+/* Стили profile */
+@import url(../blocks/profile/profile.css);
+@import url(../blocks/profile/__avatar/profile__avatar.css);
+@import url(../blocks/profile/__info/profile__info.css);
+@import url(../blocks/profile/__content/profile__content.css);
+@import url(../blocks/profile/__name/profile__name.css);
+@import url(../blocks/profile/__subname/profile__subname.css);
+
+/* Стили editButton */
+@import url(../blocks/editButton/editButton.css);
+@import url(../blocks/editButton/__icon/editButton__icon.css);
+
+/* Стили addButton */
+@import url(../blocks/addButton/addButton.css);
+
+/* Стили photo */
+@import url(../blocks/photo/photo.css);
+@import url(../blocks/photo/__elements/photo__elements.css);
+@import url(../blocks/photo/__element/photo__element.css);
+@import url(../blocks/photo/__img/photo__img.css);
+@import url(../blocks/photo/__name/photo__name.css);
+@import url(../blocks/photo/__title/photo__title.css);
+@import url(../blocks/photo/__like/photo__like.css);
+
+/* Стили footer */
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__text/footer__text.css);
