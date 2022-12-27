@@ -1,4 +1,6 @@
 .photo__like {
+   margin: 0;
+   padding: 0;
    min-width: 22px;
    min-height: 19px;
    background-image: url(../../../images/serd.svg);
@@ -15,5 +17,5 @@
 
 .photo__like:active {
    opacity: 1;
-   background: url(../../../images/serdBlack.svg) 0 0/ cover no-repeat;
+   background: url(../../../../images/serdBlack.svg) 0 0/ cover no-repeat;
 }

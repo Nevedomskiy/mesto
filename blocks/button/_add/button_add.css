@@ -1,0 +1,22 @@
+.button_add {
+   display: flex;
+   min-height: 50px;
+   width: 100%;
+   margin-top: 36px;
+   border: 2px solid #fff;
+   background-color: #000;
+   background: url(../../../images/+16.svg) center/ 16px 16px no-repeat;
+}
+
+.button_add:hover {
+   opacity: 0.6;
+}
+
+@media screen and (min-width: 1024px) {
+   .button_add {
+      margin-top: 0;
+      max-width: 150px;
+      align-self: center;
+      background: url(../../../images/+22.svg) center/ 22px 22px no-repeat;
+   }
+}

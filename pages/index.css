@@ -24,11 +24,10 @@
 @import url(../blocks/profile/__name/profile__name.css);
 @import url(../blocks/profile/__subname/profile__subname.css);
 
-/* Стили editButton */
-@import url(../blocks/editButton/editButton.css);
-
-/* Стили addButton */
-@import url(../blocks/addButton/addButton.css);
+/* Стили button */
+@import url(../blocks/button/button.css);
+@import url(../blocks/button/_add/button_add.css);
+@import url(../blocks/button/_edit/button_edit.css);
 
 /* Стили photo */
 @import url(../blocks/photo/photo.css);

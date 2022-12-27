@@ -1,24 +1,22 @@
-.editButton {
+.button_edit {
    margin-top: 8px;
-   box-sizing: border-box;
    border: 1px solid #FFFFFF;
    max-height: 18px;
    min-width: 18px;
    background-color: black;
-   background: url(../../images/str7.svg) center/ 7px 7px no-repeat;
-   cursor: pointer;
+   background: url(../../../images/str7.svg) center/ 7px 7px no-repeat;
 }
 
-.editButton:hover {
+.button_edit:hover {
    opacity: 0.6;
 }
 
 @media screen and (min-width: 1024px) {
-   .editButton {
+   .button_edit {
       max-height: 24px;
       min-width: 24px;
       margin-top: 18px;
       margin-right: 20px;
-      background: url(../../images/str10.svg) center/ 10px 10px no-repeat;
+      background: url(../../../images/str10.svg) center/ 10px 10px no-repeat;
    }
 }
