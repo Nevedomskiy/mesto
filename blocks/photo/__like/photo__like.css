@@ -3,10 +3,7 @@
    padding: 0;
    min-width: 22px;
    min-height: 19px;
-   background-image: url(../../../images/serd.svg);
-   background-size: cover;
-   background-position: 0;
-   background-repeat: no-repeat;
+   background: url(../../../images/serd.svg) 0 0/ cover no-repeat;
    cursor: pointer;
    border: none;
 }
