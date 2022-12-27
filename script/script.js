@@ -15,19 +15,15 @@ function closePopap() {
    popup.classList.remove('popup_opened');
 }
 
-function likePhoto() {
-   like.classList.add('photo__like_active');
-}
+function changeProfile(evt) {
+   evt.preventDefault();
 
-function changeProfile() {
-   let name = popupContainer.querySelector('.popup__text_type_name');
-   let profession = popupContainer.querySelector('.popup__text_type_profession');
-   let profileName = document.querySelector('.profile__name');
-   let profileSubName = document.querySelector('.profile__subname');
-   profileName.textContent = name.value;
-   profileSubName.textContent = profession.value;
-   name.value = "";
-   profession.value = "";
+   let name = popupContainer.querySelector('.popup__text_type_name').value;
+   document.querySelector('.profile__name').textContent = name;
+
+   let profession = popupContainer.querySelector('.popup__text_type_profession').value;
+   document.querySelector('.profile__subname').textContent = profession;
+   closePopap();
 }
 
 popupSubmitBtn.addEventListener('click', changeProfile);
