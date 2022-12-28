@@ -1,20 +1,28 @@
 .popup__text {
-   margin: 0;
-   padding: 13px 0 13px;
+   margin: 0 0 21px 0;
+   padding: 9px 0;
    border: 0;
    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
    font-size: 14px;
    line-height: 17px;
 }
 
-.popup__text::-moz-placeholder {
-   color: black;
-}
-
-.popup__text::-webkit-input-placeholder {
-   color: black;
-}
-
 .popup__text:focus {
    outline: 2px solid rgba(68, 104, 224, 0.7);
+}
+
+.popup__text:last-of-type {
+   margin: 0 0 45px 0;
+}
+
+
+
+@media screen and (min-width: 768px) {
+   .popup__text {
+      margin: 0 0 22px 0;
+   }
+
+   .popup__text:last-of-type {
+      margin: 0 0 47px 0;
+   }
 }

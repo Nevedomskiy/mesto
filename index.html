@@ -28,13 +28,15 @@
           <img src="./images/face.jpg" alt="Аватарка" class="profile__avatar">
           <div class="profile__content">
             <div class="profile__text">
-              <h1 class="profile__name">Жак-Ив Кусто</h1>
+              <div class="profile__block-name">
+                <h1 class="profile__name">Жак-Ив Кусто</h1>
+                <button type="button" aria-label="Редактировать" class="profile__button-edit"></button>
+              </div>
               <p class="profile__subname">Исследователь океана</p>
             </div>
-            <button class="button button_edit"></button>
           </div>
         </div>
-        <button class="button button_add"></button>
+        <button type="button" aria-label="Добавить" class="profile__button-add"></button>
       </section>
       <section class="photo">
         <ul class="photo__elements">
@@ -42,42 +44,42 @@
             <img class="photo__img" src="./images/kara.png" alt="Карачаевск">
             <div class="photo__name">
               <h3 class="photo__title">Карачаевск</h3>
-              <button class="photo__like"></button>
+              <button type="button" aria-label="Лайк" class="photo__like"></button>
             </div>
           </li>
           <li class="photo__element">
             <img class="photo__img" src="./images/elbr.png" alt="Эльбрус">
             <div class="photo__name">
               <h3 class="photo__title">Гора Эльбрус</h3>
-              <button class="photo__like"></button>
+              <button type="button" aria-label="Лайк" class="photo__like"></button>
             </div>
           </li>
           <li class="photo__element">
             <img class="photo__img" src="./images/domb.png" alt="Домбай">
             <div class="photo__name">
               <h3 class="photo__title">Домбай</h3>
-              <button class="photo__like"></button>
+              <button type="button" aria-label="Лайк" class="photo__like"></button>
             </div>
           </li>
           <li class="photo__element">
             <img class="photo__img" src="./images/elbr.png" alt="Эльбрус">
             <div class="photo__name">
               <h3 class="photo__title">Гора Эльбрус</h3>
-              <button class="photo__like"></button>
+              <button type="button" aria-label="Лайк" class="photo__like"></button>
             </div>
           </li>
           <li class="photo__element">
             <img class="photo__img" src="./images/domb.png" alt="Домбай">
             <div class="photo__name">
               <h3 class="photo__title">Домбай</h3>
-              <button class="photo__like"></button>
+              <button type="button" aria-label="Лайк" class="photo__like"></button>
             </div>
           </li>
           <li class="photo__element">
             <img class="photo__img" src="./images/kara.png" alt="Карачаевск">
             <div class="photo__name">
               <h3 class="photo__title">Карачаевск</h3>
-              <button class="photo__like"></button>
+              <button type="button" aria-label="Лайк" class="photo__like"></button>
             </div>
           </li>
         </ul>
@@ -86,18 +88,20 @@
     <footer class="footer">
       <p class="footer__text">© 2020 Mesto Russia</p>
     </footer>
-    <section class="popup">
+    <div class="popup">
       <div class="popup__container">
         <h3 class="popup__title">Редактировать профиль</h3>
-        <input type="text" value="Жак-Ив Кусто" class="popup__text popup__text_type_name">
-        <input type="text" value="Исследователь океана" class="popup__text popup__text_type_profession">
-        <button class="popup__submit-btn popup__submit-btn_action_add">
-          Сохранить
-        </button>
-        <button class="popup__close"></button>
+        <form name="profileForm" class="popup__form">
+          <input type="text" name="profile-name" class="popup__text popup__text_type_name">
+          <input type="text" name="profile-profession" class="popup__text popup__text_type_profession">
+          <button type="submit" class="popup__submit-btn popup__submit-btn_action_add">
+            Сохранить
+          </button>
+        </form>
+        <button type="button" aria-label="Закрыть" class="popup__close"></button>
       </div>
 
-    </section>
+    </div>
   </div>
   <script src="./script/script.js"></script>
 </body>
