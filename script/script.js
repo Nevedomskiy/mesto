@@ -11,8 +11,6 @@ const formProfile = document.forms.profileForm;
 const formPlace = document.forms.placeForm;
 const btAddCard = document.querySelector('.profile__button-add');
 const popapPlace = document.querySelector('.popup-place');
-const popapPlaceName = popapPlace.querySelector('.popup-place__text_type_name');
-const popapPlacelink = popapPlace.querySelector('.popup-place__text_type_link');
 const photoTemplate = document.querySelector('#photo-template').content;
 const photoElements = document.querySelector('.photo__elements');
 const popapPhoto = document.querySelector('.popup-photo');
@@ -90,6 +88,8 @@ cardLike = function (evt) {
 
 function addNewCard(evt) {
    evt.preventDefault();
+   const popapPlaceName = popapPlace.querySelector('.popup-place__text_type_name');
+   const popapPlacelink = popapPlace.querySelector('.popup-place__text_type_link');
    newCard = [{
       name: `${popapPlaceName.value}`,
       link: `${popapPlacelink.value}`
