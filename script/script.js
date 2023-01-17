@@ -11,6 +11,8 @@ const formProfile = document.forms.profileForm;
 const formPlace = document.forms.placeForm;
 const btAddCard = document.querySelector('.profile__button-add');
 const popapPlace = document.querySelector('.popup-place');
+const popapPlaceName = popapPlace.querySelector('.popup-place__text_type_name');
+const popapPlacelink = popapPlace.querySelector('.popup-place__text_type_link');
 const photoTemplate = document.querySelector('#photo-template').content;
 const photoElements = document.querySelector('.photo__elements');
 const popapPhoto = document.querySelector('.popup-photo');
@@ -56,8 +58,6 @@ btCloseAll.forEach(function (btClose) {
 
 function openPopapPlace() {
    popapPlace.classList.add('popap-active');
-   const popapPlaceName = popapPlace.querySelector('.popup-place__text_type_name');
-   const popapPlacelink = popapPlace.querySelector('.popup-place__text_type_link');
 }
 
 function deleteCard(evt) {
