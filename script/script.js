@@ -2,8 +2,6 @@ const popapProfile = document.querySelector('.popup-profile');
 const btEditProfle = document.querySelector('.profile__button-edit');
 const popapProfileName = document.querySelector('.popup-profile__text_type_name');
 const popapProfileProfession = document.querySelector('.popup-profile__text_type_profession');
-const popapPlaceName = document.querySelector('.popup-place__text_type_name');
-const popapPlacelink = document.querySelector('.popup-place__text_type_link');
 const profileName = document.querySelector('.profile__name');
 const profileSubname = document.querySelector('.profile__subname');
 const bodywork = document.querySelector('.bodywork');
@@ -58,6 +56,8 @@ btCloseAll.forEach(function (btClose) {
 
 function openPopapPlace() {
    popapPlace.classList.add('popap-active');
+   const popapPlaceName = popapPlace.querySelector('.popup-place__text_type_name');
+   const popapPlacelink = popapPlace.querySelector('.popup-place__text_type_link');
 }
 
 function deleteCard(evt) {
