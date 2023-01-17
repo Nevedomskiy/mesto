@@ -11,8 +11,3 @@
 .photo__like:hover {
    opacity: 0.5;
 }
-
-.photo__like:active {
-   opacity: 1;
-   background: url(../../../images/serdBlack.svg) 0 0/ cover no-repeat;
-}
