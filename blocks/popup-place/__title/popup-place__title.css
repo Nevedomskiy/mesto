@@ -1,4 +1,4 @@
-.popup__title {
+.popup-place__title {
    margin: 26px 0 65px 0;
    font-weight: 900;
    font-size: 18px;
@@ -6,7 +6,7 @@
 }
 
 @media screen and (min-width: 768px) {
-   .popup__title {
+   .popup-place__title {
       margin: 34px 0 39px 0;
       font-size: 24px;
       line-height: 29px;

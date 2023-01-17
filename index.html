@@ -40,69 +40,59 @@
       </section>
       <section class="photo">
         <ul class="photo__elements">
-          <li class="photo__element">
-            <img class="photo__img" src="./images/kara.png" alt="Карачаевск">
-            <div class="photo__name">
-              <h3 class="photo__title">Карачаевск</h3>
-              <button type="button" aria-label="Лайк" class="photo__like"></button>
-            </div>
-          </li>
-          <li class="photo__element">
-            <img class="photo__img" src="./images/elbr.png" alt="Эльбрус">
-            <div class="photo__name">
-              <h3 class="photo__title">Гора Эльбрус</h3>
-              <button type="button" aria-label="Лайк" class="photo__like"></button>
-            </div>
-          </li>
-          <li class="photo__element">
-            <img class="photo__img" src="./images/domb.png" alt="Домбай">
-            <div class="photo__name">
-              <h3 class="photo__title">Домбай</h3>
-              <button type="button" aria-label="Лайк" class="photo__like"></button>
-            </div>
-          </li>
-          <li class="photo__element">
-            <img class="photo__img" src="./images/elbr.png" alt="Эльбрус">
-            <div class="photo__name">
-              <h3 class="photo__title">Гора Эльбрус</h3>
-              <button type="button" aria-label="Лайк" class="photo__like"></button>
-            </div>
-          </li>
-          <li class="photo__element">
-            <img class="photo__img" src="./images/domb.png" alt="Домбай">
-            <div class="photo__name">
-              <h3 class="photo__title">Домбай</h3>
-              <button type="button" aria-label="Лайк" class="photo__like"></button>
-            </div>
-          </li>
-          <li class="photo__element">
-            <img class="photo__img" src="./images/kara.png" alt="Карачаевск">
-            <div class="photo__name">
-              <h3 class="photo__title">Карачаевск</h3>
-              <button type="button" aria-label="Лайк" class="photo__like"></button>
-            </div>
-          </li>
         </ul>
       </section>
     </main>
     <footer class="footer">
       <p class="footer__text">© 2020 Mesto Russia</p>
     </footer>
-    <div class="popup">
-      <div class="popup__container">
-        <h3 class="popup__title">Редактировать профиль</h3>
-        <form name="profileForm" class="popup__form">
-          <input type="text" name="profile-name" class="popup__text popup__text_type_name">
-          <input type="text" name="profile-profession" class="popup__text popup__text_type_profession">
-          <button type="submit" class="popup__submit-btn popup__submit-btn_action_add">
+    <div class="popup-place">
+      <div class="popup-place__container">
+        <h3 class="popup-place__title">Новое место</h3>
+        <form name="placeForm" class="popup-place__form">
+          <input type="text" name="profile-name" placeholder="Название"
+            class="popup-place__text popup-place__text_type_name">
+          <input type="text" name="profile-profession" placeholder="Ссылка на картинку"
+            class="popup-place__text popup-place__text_type_link">
+          <button type="submit" class="popup-place__submit-btn popup-place__submit-btn_action_add">
+            Создать
+          </button>
+        </form>
+        <button type="button" aria-label="Закрыть" class="bt-close"></button>
+      </div>
+    </div>
+    <div class="popup-profile">
+      <div class="popup-profile__container">
+        <h3 class="popup-profile__title">Редактировать профиль</h3>
+        <form name="profileForm" class="popup-profile__form">
+          <input type="text" name="profile-name" class="popup-profile__text popup-profile__text_type_name">
+          <input type="text" name="profile-profession" class="popup-profile__text popup-profile__text_type_profession">
+          <button type="submit" class="popup-profile__submit-btn popup-profile__submit-btn_action_add">
             Сохранить
           </button>
         </form>
-        <button type="button" aria-label="Закрыть" class="popup__close"></button>
+        <button type="button" aria-label="Закрыть" class="bt-close"></button>
       </div>
+    </div>
 
+  </div>
+  <div class="popup-photo">
+    <div class="popup-photo__container">
+      <img class="popup-photo__img" alt="" src="">
+      <h3 class="popup-photo__name"></h3>
+      <button type="button" aria-label="Закрыть" class="bt-close"></button>
     </div>
   </div>
+  <template id="photo-template">
+    <li class="photo__element">
+      <img class="photo__img">
+      <div class="photo__name">
+        <h3 class="photo__title"></h3>
+        <button type="button" aria-label="Лайк" class="photo__like"></button>
+      </div>
+      <button type="button" aria-label="Удалить" class="photo__delete"></button>
+    </li>
+  </template>
   <script src="./script/script.js"></script>
 </body>
 
