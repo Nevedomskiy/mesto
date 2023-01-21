@@ -29,7 +29,7 @@
 
 /* Стили photo */
 @import url(../blocks/photo/photo.css);
-@import url(../blocks/photo/__elements/photo__elements.css);
+@import url(../blocks/photo//__container/photo__container.css);
 @import url(../blocks/photo/__element/photo__element.css);
 @import url(../blocks/photo/__img/photo__img.css);
 @import url(../blocks/photo/__name/photo__name.css);
@@ -42,31 +42,18 @@
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__text/footer__text.css);
 
-/* Стили popup-profile */
-@import url(../blocks/popup-profile/popup-profile.css);
-@import url(../blocks/popup-profile/__container/popup-profile__container.css);
-@import url(../blocks/popup-profile/__title/popup-profile__title.css);
-@import url(../blocks/popup-profile/__text/popup-profile__text.css);
-@import url(../blocks/popup-profile/__submit-btn/popup-profile__submit-btn.css);
-@import url(../blocks/popup-profile/__form/popup-profile__form.css);
+/* Стили popup */
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/__container/popup__container.css);
+@import url(../blocks/popup/__container/_type/popup__container_type_place.css);
+@import url(../blocks/popup/__container/_type/popup__container_type_profile.css);
+@import url(../blocks/popup/__form/popup__form.css);
+@import url(../blocks/popup/__title/popup__title.css);
+@import url(../blocks/popup/__submit-btn/popup__submit-btn.css);
+@import url(../blocks/popup/__text/popup__text.css);
+@import url(../blocks/popup/__img/popup__img.css);
+@import url(../blocks/popup/__name/popup__name.css);
+@import url(../blocks/popup/_active/popup_active.css);
 
-/* Стили popup-place */
-@import url(../blocks/popup-place/popup-place.css);
-@import url(../blocks/popup-place/__container/popup-place__container.css);
-@import url(../blocks/popup-place/__title/popup-place__title.css);
-@import url(../blocks/popup-place/__text/popup-place__text.css);
-@import url(../blocks/popup-place/__submit-btn/popup-place__submit-btn.css);
-@import url(../blocks/popup-place/__form/popup-place__form.css);
-
-/* Стили big-photo */
-
-@import url(../blocks/popup-photo/__container/popup-photo__container.css);
-@import url(../blocks/popup-photo/popup-photo.css);
-@import url(../blocks/popup-photo/__img/popup-photo__img.css);
-@import url(../blocks/popup-photo/__name/popup-photo__name.css);
-
-/* Стили bt-close */
-@import url(../blocks/bt-close/bt-close.css);
-
-/* Стили popap-active */
-@import url(../blocks/popap-active/popap-active.css);
+/* Стили btn-close */
+@import url(../blocks/btn-close/btn-close.css);

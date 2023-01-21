@@ -1,17 +1,14 @@
-.popup-place__container {
+.popup__container_type_place {
    box-sizing: border-box;
    background: #FFFFFF;
    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
    border-radius: 10px;
-   display: flex;
-   flex-direction: column;
-   position: relative;
    padding: 0 22px;
    width: 88.125%;
 }
 
 @media screen and (min-width: 768px) {
-   .popup-place__container {
+   .popup__container_type_place {
       max-width: 430px;
       padding: 0 36px;
       width: 33.59375%;

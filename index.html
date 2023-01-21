@@ -39,48 +39,47 @@
         <button type="button" aria-label="Добавить" class="profile__button-add"></button>
       </section>
       <section class="photo">
-        <ul class="photo__elements">
+        <ul class="photo__container">
         </ul>
       </section>
     </main>
     <footer class="footer">
-      <p class="footer__text">© 2020 Mesto Russia</p>
+      <p class="footer__text">© 2022 Mesto Russia</p>
     </footer>
-    <div class="popup-place">
-      <div class="popup-place__container">
-        <h3 class="popup-place__title">Новое место</h3>
-        <form name="placeForm" class="popup-place__form">
-          <input type="text" name="profile-name" placeholder="Название"
-            class="popup-place__text popup-place__text_type_name">
+    <div class="popup popup_type_place">
+      <div class="popup__container popup__container_type_place">
+        <h3 class="popup__title">Новое место</h3>
+        <form name="placeForm" class="popup__form">
+          <input type="text" name="profile-name" placeholder="Название" class="popup__text popup__text_type_name_place">
           <input type="text" name="profile-profession" placeholder="Ссылка на картинку"
-            class="popup-place__text popup-place__text_type_link">
-          <button type="submit" class="popup-place__submit-btn popup-place__submit-btn_action_add">
+            class="popup__text popup__text_type_link_place">
+          <button type="submit" class="popup__submit-btn popup__submit-btn_action_add_place">
             Создать
           </button>
         </form>
-        <button type="button" aria-label="Закрыть" class="bt-close"></button>
+        <button type="button" aria-label="Закрыть" class="btn-close"></button>
       </div>
     </div>
-    <div class="popup-profile">
-      <div class="popup-profile__container">
-        <h3 class="popup-profile__title">Редактировать профиль</h3>
-        <form name="profileForm" class="popup-profile__form">
-          <input type="text" name="profile-name" class="popup-profile__text popup-profile__text_type_name">
-          <input type="text" name="profile-profession" class="popup-profile__text popup-profile__text_type_profession">
-          <button type="submit" class="popup-profile__submit-btn popup-profile__submit-btn_action_add">
+    <div class="popup popup_type_profile">
+      <div class="popup__container popup__container_type_profile">
+        <h3 class="popup__title">Редактировать профиль</h3>
+        <form name="profileForm" class="popup__form">
+          <input type="text" name="profile-name" class="popup__text popup__text_type_name_profile">
+          <input type="text" name="profile-profession" class="popup__text popup__text_type_profession_profile">
+          <button type="submit" class="popup__submit-btn popup__submit-btn_action_add_profile">
             Сохранить
           </button>
         </form>
-        <button type="button" aria-label="Закрыть" class="bt-close"></button>
+        <button type="button" aria-label="Закрыть" class="btn-close"></button>
       </div>
     </div>
 
   </div>
-  <div class="popup-photo">
-    <div class="popup-photo__container">
-      <img class="popup-photo__img">
-      <h3 class="popup-photo__name"></h3>
-      <button type="button" aria-label="Закрыть" class="bt-close"></button>
+  <div class="popup popup_type_photo">
+    <div class="popup__container popup__container_type_photo">
+      <img class="popup__img">
+      <h3 class="popup__name"></h3>
+      <button type="button" aria-label="Закрыть" class="btn-close"></button>
     </div>
   </div>
   <template id="photo-template">
@@ -93,6 +92,7 @@
       <button type="button" aria-label="Удалить" class="photo__delete"></button>
     </li>
   </template>
+  <script src="./script/arrays.js"></script>
   <script src="./script/script.js"></script>
 </body>
 

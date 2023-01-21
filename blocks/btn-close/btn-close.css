@@ -1,4 +1,4 @@
-.bt-close {
+.btn-close {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
@@ -12,12 +12,12 @@
    cursor: pointer;
 }
 
-.bt-close:hover {
+.btn-close:hover {
    opacity: 0.6;
 }
 
 @media screen and (min-width: 768px) {
-   .bt-close {
+   .btn-close {
       min-width: 32px;
       min-height: 32px;
       right: -40px;

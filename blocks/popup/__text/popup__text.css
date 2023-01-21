@@ -1,4 +1,4 @@
-.popup-profile__text {
+.popup__text {
    margin: 0 0 21px 0;
    padding: 9px 0;
    border: 0;
@@ -7,22 +7,22 @@
    line-height: 17px;
 }
 
-.popup-profile__text:focus {
+.popup__text:focus {
    outline: 2px solid rgba(68, 104, 224, 0.7);
 }
 
-.popup-profile__text:last-of-type {
+.popup__text:last-of-type {
    margin: 0 0 45px 0;
 }
 
 
 
 @media screen and (min-width: 768px) {
-   .popup-profile__text {
+   .popup__text {
       margin: 0 0 22px 0;
    }
 
-   .popup-profile__text:last-of-type {
+   .popup__text:last-of-type {
       margin: 0 0 47px 0;
    }
 }
