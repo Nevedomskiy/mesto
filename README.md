@@ -1,6 +1,6 @@
 **Для русскоязычных пользователей**
 
-1. Название проекта - "Проект: Место". 4 спринт, Проектная работа №4.
+1. Название проекта - "Проект: Место". 4-5 спринт, Проектная работа №4-5.
 
 2. Данный проект используется для закрепленния теоритеческого материала в программе обучения ЯндексПрактикума "Веб-разработчик".
    Во время 4 спринта были изучены и применены методы:
@@ -23,7 +23,31 @@
       в)Идеальный коммит;
       г)Прячем незакоммиченные изменения.
 
-В результате выполнения ПР4 из макеты FIGMA был сверстан адаптивный сайт, который в последующем был запушен на GITHAB и с помощью Diploy выложен в публичный доступ -
+      Во время 5 спринта были изучены и применены методы:
+   -Создание, добавление и удаление элементов в DOM:
+      а)Создание элементов: createElement и createTextNode;
+      б)Добавление элементов на страницу. Методы append, prepend, before, after и replaceWith;
+      в)Удаление и перемещение элементов. Методы remove и closest;
+      г)Клонирование элементов. Метод cloneNode;
+      д)template-элементы;
+      е)Объект event. Метод addEventListener - объект event, свойство target;
+      ё)Родственные связи в DOM: свойства parentElement, children, firstElementChild и lastElementChild, previousElementSibling и nextElementSibling.
+   -Массивы:
+      а)Объединение и преобразование в строку. Метод concat. Метод join.
+      б)Добавление и удаление последнего элемента: метод push, pop;
+      в)Добавление и удаление первого элемента: метод shift, unshift;
+      г)Управление элементами на любых позициях: метод slice, splice.
+      д)Коллекции в DOM. Метод Array.from;
+      е)Перебор массива. Методы forEach и map;
+      ё)Функции обратного вызова и их 3 аргумента;
+      ж)Отбор элементов массива: метод filter, some, every, find;
+      з)Сведение массива. Метод reduce. Метод sort
+      и)Дополнительно: императивное и декларативное программирование;
+   -Git:
+      а)Merge tools;
+      б)SSH повторение;
+
+В результате выполнения ПР4 и ПР5 из макетов FIGMA был сверстан адаптивный сайт, который в последующем был запушен на GITHAB и с помощью Diploy выложен в публичный доступ -
 [Ссылка на сайт] - (https://nevedomskiy.github.io/mesto/)
 
 3. Ссылки на сторонник ресурсы для верстки сайта
@@ -35,7 +59,8 @@
    [Ссылка на сайт](https://developer.mozilla.org/ru/docs/Web/CSS)
 
    **Figma**
-   [Ссылка на макет в Figma](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?t=ybH75czb5wz4FZfl-0)
+   [Ссылка на макет в Figma ПР4](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?t=ybH75czb5wz4FZfl-0)
+   [Ссылка на макет в Figma ПР5](https://www.figma.com/file/bjyvbKKJN2naO0ucURl2Z0/JavaScript.-Sprint-5?node-id=50160%3A347&t=TaShR0ur8yKeeiY8-0)
 
    **Оптимизация картинкок**
    [Ссылка на сайт](https://tinypng.com/)
@@ -58,7 +83,7 @@
 
 **For English speaking users**
 
-1. Project name - "Project: Place". 4th sprint, Project work No. 4.
+1. Project name - "Project: Place". 4-5th sprint, Project work No. 4-5.
 
 2. This project is used to consolidate the theoretical material in the Yandex Practicum "Web Developer" training program.
    During 4 sprints, the following methods were researched and applied:
@@ -80,8 +105,31 @@
       b) Cancel the merging of branches;
       c) Ideal commit;
       d) Hide uncommitted changes.
+   During Sprint 5, the following methods were studied and applied:
+   -Creating, adding and removing elements in the DOM:
+      a) Creating elements: createElement and createTextNode;
+      b) Adding elements to the page. The append, prepend, before, after, and replaceWith methods;
+      c) Removing and moving elements. The remove and closest methods;
+      d) Cloning elements. cloneNode method;
+      e) template elements;
+      f) The event object. addEventListener method - event object, target property;
+      g) Relationships in the DOM: parentElement, children, firstElementChild and lastElementChild, previousElementSibling and nextElementSibling properties.
+   -Arrays:
+      a) Combining and converting to a string. concate method. join method.
+      b) Adding and removing the last element: method push, pop;
+      c) Adding and removing the first element: method shift, unshift;
+      d) Managing elements at any positions: slice, splice method.
+      e) Collections in the DOM. Array.from method;
+      f) Iterating over an array. forEach and map methods;
+      g) Callback functions and their 3 arguments;
+      h) Selection of array elements: filter, some, every, find method;
+      u) Array flattening. reduce method. sort method
+      v) Optional: imperative and declarative programming;
+   -Git:
+      a) Merge tools;
+      b) SSH repetition;
 
-As a result of the implementation of WP4, an adaptive site was made from the FIGMA layout, which was subsequently launched on GITHAB and made available to the public using Diploy -
+As a result of the implementation of PW4 and PW5, an adaptive site was made from the FIGMA layouts, which was subsequently launched on GITHAB and made available to the public with the help of Diploy -
 [Website link] - (https://nevedomskiy.github.io/mesto/)
 
 3. Links to export resources for site layout
@@ -93,7 +141,8 @@ As a result of the implementation of WP4, an adaptive site was made from the FIG
 [Website link](https://developer.mozilla.org/ru/docs/Web/CSS)
 
 **Figma**
-[Link to layout in Figma](https://www.figma.com/file/5S2WSbEFL6awjVWJ0NWL8Q/Sprint-3_-Russia-_-desktop-mobile?node-id=28503%3A0)
+[Link to layout in Figma PW4](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?t=ybH75czb5wz4FZfl-0)
+[Link to layout in Figma PW5](https://www.figma.com/file/bjyvbKKJN2naO0ucURl2Z0/JavaScript.-Sprint-5?node-id=50160%3A347&t=TaShR0ur8yKeeiY8-0)
 
 **Picture Optimization**
 [Website Link](https://tinypng.com/)
