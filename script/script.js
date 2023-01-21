@@ -1,8 +1,8 @@
 //variables
 const popupProfile = document.querySelector('.popup_type_profile');
 const btnEditProfile = document.querySelector('.profile__button-edit');
-const popupProfileName = document.querySelector('.popup__text_type_name_profile');
-const popupProfileProfession = document.querySelector('.popup__text_type_profession_profile');
+const popupProfileName = document.querySelector('.popup__text_type_name-profile');
+const popupProfileProfession = document.querySelector('.popup__text_type_profession-profile');
 const profileName = document.querySelector('.profile__name');
 const profileSubName = document.querySelector('.profile__subname');
 const bodywork = document.querySelector('.bodywork');
@@ -16,8 +16,8 @@ const photoContainer = document.querySelector('.photo__container');
 const popupPhoto = document.querySelector('.popup_type_photo');
 const popupPhotoImg = document.querySelector('.popup__img');
 const popupPhotoName = document.querySelector('.popup__name');
-const popupPlaceName = popupPlace.querySelector('.popup__text_type_name_place');
-const popupPlaceLink = popupPlace.querySelector('.popup__text_type_link_place');
+const popupPlaceName = popupPlace.querySelector('.popup__text_type_name-place');
+const popupPlaceLink = popupPlace.querySelector('.popup__text_type_link-place');
 const photoElement = photoTemplate.querySelector('.photo__element');
 
 //funcstions
