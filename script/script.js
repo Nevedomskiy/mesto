@@ -1,8 +1,9 @@
 //variables
+const listPopup = document.querySelectorAll('.popup');
 const popupProfile = document.querySelector('.popup_type_profile');
 const btnEditProfile = document.querySelector('.profile__button-edit');
-const popupProfileName = document.querySelector('.popup__text_type_name-profile');
-const popupProfileProfession = document.querySelector('.popup__text_type_profession-profile');
+const popupProfileName = document.querySelector('.popup__input_type_name-profile');
+const popupProfileProfession = document.querySelector('.popup__input_type_profession-profile');
 const profileName = document.querySelector('.profile__name');
 const profileSubName = document.querySelector('.profile__subname');
 const bodywork = document.querySelector('.bodywork');
@@ -16,18 +17,33 @@ const photoContainer = document.querySelector('.photo__container');
 const popupPhoto = document.querySelector('.popup_type_photo');
 const popupPhotoImg = document.querySelector('.popup__img');
 const popupPhotoName = document.querySelector('.popup__name');
-const popupPlaceName = popupPlace.querySelector('.popup__text_type_name-place');
-const popupPlaceLink = popupPlace.querySelector('.popup__text_type_link-place');
+const popupPlaceName = popupPlace.querySelector('.popup__input_type_name-place');
+const popupPlaceLink = popupPlace.querySelector('.popup__input_type_link-place');
 const photoElement = photoTemplate.querySelector('.photo__element');
 
 //funcstions
-const openPopup = function (popup) {
+function openPopup(popup) {
    popup.classList.add('popup_active');
+   popup.addEventListener('click', (evt) => {
+      listenerClickOverley(evt, popup);
+   })
 }
 
-const closePopup = function (popup) {
+function closePopup(popup) {
    popup.classList.remove('popup_active');
 }
+
+function listenerClickOverley(evt, popup) {
+   if (evt.target === evt.currentTarget) {
+      closePopup(popup);
+   }
+}
+
+function handlePopupCloseEsc(evt) {
+   listPopup.forEach(function (popup){
+      if (evt.key === 'Escape') { closePopup(popup) }
+   })
+};
 
 function handleOpenPopupPhoto(evt) {
    openPopup(popupPhoto);
@@ -60,7 +76,6 @@ function handleAddNewCard(evt) {
    popupPlaceLink.value = '';
    addNewCard(newCard);
 }
-
 
 function createCard(cardData) {
    const photoElementClone = photoElement.cloneNode(true);
@@ -96,3 +111,10 @@ btnCloseAll.forEach(function (buttonClose) {
       closePopup(evt.target.closest('.popup'));
    })
 })
+document.addEventListener('keydown', handlePopupCloseEsc);
+
+
+
+
+
+
