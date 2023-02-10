@@ -1,8 +1,9 @@
 **Для русскоязычных пользователей**
 
-1. Название проекта - "Проект: Место". 4-5 спринт, Проектная работа №4-5.
+1. Название проекта - "Проект: Место". 4-5-6 спринты, Проектная работа №4-5-6.
 
 2. Данный проект используется для закрепленния теоритеческого материала в программе обучения ЯндексПрактикума "Веб-разработчик".
+
    Во время 4 спринта были изучены и применены методы:
    -Знакомство с DOM:
       а)Выбор элементов;
@@ -23,7 +24,7 @@
       в)Идеальный коммит;
       г)Прячем незакоммиченные изменения.
 
-      Во время 5 спринта были изучены и применены методы:
+   Во время 5 спринта были изучены и применены методы:
    -Создание, добавление и удаление элементов в DOM:
       а)Создание элементов: createElement и createTextNode;
       б)Добавление элементов на страницу. Методы append, prepend, before, after и replaceWith;
@@ -47,7 +48,33 @@
       а)Merge tools;
       б)SSH повторение;
 
-В результате выполнения ПР4 и ПР5 из макетов FIGMA был сверстан адаптивный сайт, который в последующем был запушен на GITHAB и с помощью Diploy выложен в публичный доступ -
+   Во время 6 спринта были изучены и применены методы:
+   -Объекты:
+      а)Создание объектов и запись свойств;
+      б)Обращение к свойству;
+      в)Операторы: delete, in;
+      г)Перебор свойств. Цикл for...in. Object.entries, Object.keys и Object.values;
+      д)Передача по ссылке. Сравнение объектов. Поверхностное и глубокое копирование объектов;
+      е)Массивы — это объекты. Функции — это объекты;
+   -Обработка событий:
+      а)События клавиатуры. Объект event — клавиатура. Объект event — мышь;
+      б)Снятие слушателя;
+      в)Отмена стандартного поведения браузера;
+      г)Всплытие и делегирование событий. Отмена всплытия;
+   -Работа с формами:
+      а)Доступ к форме из JavaScript;
+      б)Отправка формы. Событие submit;
+      в)Получение элементов форм;
+      г)События change и input;
+      д)Методы reset и submit;
+   -Валидация форм:
+      а)Встроенная браузерная валидация форм;
+      б)Валидация с JavaScript;
+      в)Связываем JS-методы валидации с DOM;
+      г)Валидация нескольких полей и форм;
+      д)Взаимодействие с другими элементами DOM;
+
+В результате выполнения ПР4, ПР5, ПР6 из макетов FIGMA был сверстан адаптивный сайт, который в последующем был запушен на GITHAB и с помощью Diploy выложен в публичный доступ -
 [Ссылка на сайт] - (https://nevedomskiy.github.io/mesto/)
 
 3. Ссылки на сторонник ресурсы для верстки сайта
@@ -61,6 +88,7 @@
    **Figma**
    [Ссылка на макет в Figma ПР4](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?t=ybH75czb5wz4FZfl-0)
    [Ссылка на макет в Figma ПР5](https://www.figma.com/file/bjyvbKKJN2naO0ucURl2Z0/JavaScript.-Sprint-5?node-id=50160%3A347&t=TaShR0ur8yKeeiY8-0)
+   [Ссылка на макет в Figma ПР6](https://www.figma.com/file/kRVLKwYG3d1HGLvh7JFWRT/JavaScript.-Sprint-6?node-id=1124%3A73&t=VhJyIu7o9N4NzeNw-0)
 
    **Оптимизация картинкок**
    [Ссылка на сайт](https://tinypng.com/)
@@ -83,9 +111,10 @@
 
 **For English speaking users**
 
-1. Project name - "Project: Place". 4-5th sprint, Project work No. 4-5.
+1. Project name - "Project: Place". 4-5-6 sprints, Project work #4-5-6.
 
 2. This project is used to consolidate the theoretical material in the Yandex Practicum "Web Developer" training program.
+
    During 4 sprints, the following methods were researched and applied:
    -Acquaintance with the HOUSE:
       a) Selection of elements;
@@ -105,6 +134,7 @@
       b) Cancel the merging of branches;
       c) Ideal commit;
       d) Hide uncommitted changes.
+
    During Sprint 5, the following methods were studied and applied:
    -Creating, adding and removing elements in the DOM:
       a) Creating elements: createElement and createTextNode;
@@ -129,7 +159,33 @@
       a) Merge tools;
       b) SSH repetition;
 
-As a result of the implementation of PW4 and PW5, an adaptive site was made from the FIGMA layouts, which was subsequently launched on GITHAB and made available to the public with the help of Diploy -
+   During Sprint 6, the following methods were studied and applied:
+   -Objects:
+      a) Creating objects and writing properties;
+      b) Access to the property;
+      c) Operators: delete, in;
+      d) Enumeration of properties. for...in loop. Object.entries, Object.keys and Object.values;
+      e) Passing by reference. Comparison of objects. Surface and deep copying of objects;
+      f) Arrays are objects. Functions are objects;
+   -Event handling:
+      a) Keyboard events. The event object is the keyboard. The event object is the mouse;
+      b) Removing the listener;
+      c) Cancellation of the standard behavior of the browser;
+      d) Emerging and delegating events. Cancel ascent;
+   -Working with forms:
+      a) Accessing the form from JavaScript;
+      b) Submitting the form. submit event;
+      c) Getting form elements;
+      d) change and input events;
+      e) Reset and submit methods;
+   -Form validation:
+      a) Built-in browser-based form validation;
+      b) Validation with JavaScript;
+      c) Associate JS validation methods with DOM;
+      d) Validation of several fields and forms;
+      e) Interaction with other DOM elements;
+
+As a result of the implementation of PW4, PW5 and PW6, an adaptive site was made from the FIGMA layouts, which was subsequently launched on GITHAB and made available to the public with the help of Diploy -
 [Website link] - (https://nevedomskiy.github.io/mesto/)
 
 3. Links to export resources for site layout
@@ -143,6 +199,7 @@ As a result of the implementation of PW4 and PW5, an adaptive site was made from
 **Figma**
 [Link to layout in Figma PW4](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?t=ybH75czb5wz4FZfl-0)
 [Link to layout in Figma PW5](https://www.figma.com/file/bjyvbKKJN2naO0ucURl2Z0/JavaScript.-Sprint-5?node-id=50160%3A347&t=TaShR0ur8yKeeiY8-0)
+[Link to layout in Figma PW6](https://www.figma.com/file/kRVLKwYG3d1HGLvh7JFWRT/JavaScript.-Sprint-6?node-id=1124%3A73&t=VhJyIu7o9N4NzeNw-0)
 
 **Picture Optimization**
 [Website Link](https://tinypng.com/)

@@ -24,13 +24,15 @@ const photoElement = photoTemplate.querySelector('.photo__element');
 //funcstions
 function openPopup(popup) {
    popup.classList.add('popup_active');
-   popup.addEventListener('click', (evt) => {
+   popup.addEventListener('mousedown', (evt) => {
       listenerClickOverley(evt, popup);
    })
+   document.addEventListener('keydown', handlePopupCloseEsc);
 }
 
 function closePopup(popup) {
    popup.classList.remove('popup_active');
+   document.removeEventListener('keydown', handlePopupCloseEsc);
 }
 
 function listenerClickOverley(evt, popup) {
@@ -40,7 +42,7 @@ function listenerClickOverley(evt, popup) {
 }
 
 function handlePopupCloseEsc(evt) {
-   listPopup.forEach(function (popup){
+   listPopup.forEach(function (popup) {
       if (evt.key === 'Escape') { closePopup(popup) }
    })
 };
@@ -111,7 +113,7 @@ btnCloseAll.forEach(function (buttonClose) {
       closePopup(evt.target.closest('.popup'));
    })
 })
-document.addEventListener('keydown', handlePopupCloseEsc);
+
 
 
 

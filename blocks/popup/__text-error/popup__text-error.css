@@ -1,11 +1,12 @@
 .popup__text-error {
+   margin-top: 5px;
    font-size: 12px;
    line-height: 15px;
-   text-align: left;
    color: #FF0000;
-   min-height: 15px;
+   min-height: 30px;
 }
 
 .popup__text-error:last-of-type {
-   margin-bottom: 30px;
+   margin-bottom: 2px;
 }
+
