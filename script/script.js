@@ -27,12 +27,19 @@ function openPopup(popup) {
    popup.addEventListener('mousedown', (evt) => {
       listenerClickOverley(evt, popup);
    })
-   document.addEventListener('keydown', handlePopupCloseEsc);
+   document.addEventListener('keydown', (evt) => {
+      handlePopupCloseEsc(evt, popup);
+   });
 }
 
 function closePopup(popup) {
    popup.classList.remove('popup_active');
-   document.removeEventListener('keydown', handlePopupCloseEsc);
+   document.removeEventListener('keydown', (evt) => {
+      handlePopupCloseEsc(evt, popup);
+   });
+   popup.removeEventListener('mousedown', (evt) => {
+      listenerClickOverley(evt, popup);
+   })
 }
 
 function listenerClickOverley(evt, popup) {
@@ -41,10 +48,8 @@ function listenerClickOverley(evt, popup) {
    }
 }
 
-function handlePopupCloseEsc(evt) {
-   listPopup.forEach(function (popup) {
-      if (evt.key === 'Escape') { closePopup(popup) }
-   })
+function handlePopupCloseEsc(evt, popup) {
+   if (evt.key === 'Escape') { closePopup(popup) }
 };
 
 function handleOpenPopupPhoto(evt) {
@@ -77,6 +82,7 @@ function handleAddNewCard(evt) {
    popupPlaceName.value = '';
    popupPlaceLink.value = '';
    addNewCard(newCard);
+   toggleButton(formPlace, formValidationConfig);
 }
 
 function createCard(cardData) {
