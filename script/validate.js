@@ -4,6 +4,7 @@ const formValidationConfig = {
    inputSelector: '.popup__input',
    errorClass: 'form__input_error',
    buttonSubmitSelector: '.popup__submit-btn',
+   buttonSubmitDisabledClass: 'popup__submit-btn_disabled',
 }
 
 function disableSubmit(evt) { evt.preventDefault(); };
@@ -20,7 +21,6 @@ function enabledValidationForm(form, config) {
    addInputListners(form, config);
    form.addEventListener('submit', disableSubmit);
    addInputListners(form, config);
-
    form.addEventListener('input', () => {
       toggleButton(form, config);
    })
@@ -39,8 +39,6 @@ function handleFormInput(evt, config) {
    const inputEvent = evt.target;
    const inputEventId = inputEvent.id;
    const spanError = document.querySelector(`#${inputEventId}-error`);
-
-
    if (inputEvent.validity.valid) {
       inputEvent.classList.remove(config.errorClass);
       spanError.textContent = '';
@@ -48,7 +46,6 @@ function handleFormInput(evt, config) {
    else {
       inputEvent.classList.add(config.errorClass);
       spanError.textContent = inputEvent.validationMessage;
-
    }
 }
 
@@ -56,8 +53,7 @@ function toggleButton(form, config) {
    const buttonSubmit = form.querySelector(config.buttonSubmitSelector);
    const isFormValid = form.checkValidity();
    buttonSubmit.disabled = !isFormValid;
-   buttonSubmit.classList.toggle('popup__submit-btn_disabled', !isFormValid);
-
+   buttonSubmit.classList.toggle(config.buttonSubmitDisabledClass, !isFormValid);
 }
 
 enabledValidation(formValidationConfig);
