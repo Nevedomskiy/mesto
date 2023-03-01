@@ -52,7 +52,7 @@
     <div class="popup popup_type_place">
       <div class="popup__container popup__container_type_place">
         <h3 class="popup__title">Новое место</h3>
-        <form name="placeForm" class="popup__form" novalidate>
+        <form name="placeForm" class="popup__form popup__form_type_place" novalidate>
           <input id="place-name" required type="text" minlength="2" maxlength="30" name="name" placeholder="Название"
             class="popup__input popup__input_type_name-place">
           <span id="place-name-error" class="popup__text-error"></span>
@@ -69,7 +69,7 @@
     <div class="popup popup_type_profile">
       <div class="popup__container popup__container_type_profile">
         <h3 class="popup__title">Редактировать профиль</h3>
-        <form name="profileForm" class="popup__form" novalidate>
+        <form name="profileForm" class="popup__form popup__form_type_profile" novalidate>
           <input id="profile-name" required type="text" minlength="2" maxlength="40" name="name"
             class="popup__input popup__input_type_name-profile">
           <span id="profile-name-error" class="popup__text-error"> </span>
@@ -102,9 +102,10 @@
       <button type="button" aria-label="Удалить" class="photo__delete"></button>
     </li>
   </template>
-  <script src="./script/validate.js"></script>
-  <script src="./script/arrays.js"></script>
-  <script src="./script/script.js"></script>
+  <script type="module" src="./script/Card.js"></script>
+  <script type="module" src="./script/arrays.js"></script>
+  <script type="module" src="./script/FormValidator.js"></script>
+  <script type="module" src="./script/script.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,4 @@
+//объект с данными карточек
 const initialCards = [
    {
       name: 'Архыз',
@@ -24,3 +25,14 @@ const initialCards = [
       link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
    }
 ];
+
+//объект с данными для валидации
+const formValidationConfig = {
+   formSelector: '.popup__form',
+   inputSelector: '.popup__input',
+   errorClass: 'form__input_error',
+   buttonSubmitSelector: '.popup__submit-btn',
+   buttonSubmitDisabledClass: 'popup__submit-btn_disabled',
+}
+
+export { initialCards, formValidationConfig }
