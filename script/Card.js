@@ -1,14 +1,12 @@
 //класс создания карточек
 export class Card {
-   static _photoContainer = document.querySelector('.photo__container');
-
-
-   constructor(data, template, handleOpenPopupPhoto, formValidationPlace) {
+   constructor(data, template, handleOpenPopupPhoto) {
       this._cardData = data;
       this._photoTemplate = template;
       this._handleOpenPopupPhoto = handleOpenPopupPhoto;
-      this._formValidationPlace = formValidationPlace;
+
    }
+
    //публичный метод генерации карточки
    createCard() {
       this._photoElement = this._photoTemplate.querySelector('.photo__element');
@@ -21,13 +19,9 @@ export class Card {
       this._photoDelete = this._photoElementClone.querySelector('.photo__delete');
       this._photoLike = this._photoElementClone.querySelector('.photo__like');
       this._addInputListners();
-      this._validation();
-      this._addNewCard();
+      return this._photoElementClone;
    };
-   //метод валидации карточки
-   _validation() {
-      this._formValidationPlace.toggleButton();
-   }
+
    //метод слушателей нажатий
    _addInputListners() {
 
@@ -41,19 +35,16 @@ export class Card {
          this._cardLike();
       });
    }
+
    //метод удаление карточки
    _removeCard() {
       this._photoElementClone.remove();
    }
+
    //метод лайка карточки
    _cardLike() {
       this._photoLike.classList.toggle('photo__like_active');
    }
-   //метод добавления карточки в контейнер
-   _addNewCard() {
-      Card._photoContainer.prepend(this._photoElementClone);
-   };
-
 }
 
 

@@ -32,7 +32,7 @@ const formValidationConfig = {
    inputSelector: '.popup__input',
    errorClass: 'form__input_error',
    buttonSubmitSelector: '.popup__submit-btn',
-   buttonSubmitDisabledClass: 'popup__submit-btn_disabled',
+   buttonSubmitDisabledClass: 'popup__submit-btn_disabled'
 }
 
 export { initialCards, formValidationConfig }

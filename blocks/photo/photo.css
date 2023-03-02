@@ -1,5 +1,6 @@
 .photo {
    margin-top: 36px;
+   min-height: 35vh;
 }
 
 @media screen and (min-width: 1024px) {

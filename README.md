@@ -2,7 +2,7 @@
 
 1. Название проекта - "Проект: Место". 4-5-6 спринты, Проектная работа №4-5-6.
 
-2. Данный проект используется для закрепленния теоритеческого материала в программе обучения ЯндексПрактикума "Веб-разработчик".
+2. Данный проект используется для закрепленния теоритеческого материала в программе обучения ЯндексПрактикума "Веб-разработчик". В результате выполнения ПР4-ПР7 из макетов FIGMA был сверстан адаптивный сайт, который в последующем был запушен на GITHAB и с помощью Diploy выложен в публичный доступ - [Ссылка на сайт] - (https://nevedomskiy.github.io/mesto/)
 
    Во время 4 спринта были изучены и применены методы:
    -Знакомство с DOM:
@@ -74,8 +74,25 @@
       г)Валидация нескольких полей и форм;
       д)Взаимодействие с другими элементами DOM;
 
-В результате выполнения ПР4, ПР5, ПР6 из макетов FIGMA был сверстан адаптивный сайт, который в последующем был запушен на GITHAB и с помощью Diploy выложен в публичный доступ -
-[Ссылка на сайт] - (https://nevedomskiy.github.io/mesto/)
+   Во время 7 спринта были изучены и применены методы:
+   -Объектно-ориентированное программирование:
+      а)Объекты в ООП;
+      б)Классы;
+      в)Краткое погружение в this;
+      г)Инкапсуляция;
+      д)Наследование;
+      е)Полиморфизм;
+   -ООП в интерфейсах:
+      а)Шаблон разметки внутри класса;
+      б)Добавление данных в разметку и размещение в DOM;
+      в)Подготовка класса к масштабированию;
+      г)Обработчики событий;
+   -Модули в JS:
+      а)IIFE;
+      б)Инкапсуляция и модули;
+      в)Что такое модуль и как его использовать;
+      г)Директивы export и import;
+      д)Особенности работы модулей в браузере;
 
 3. Ссылки на сторонник ресурсы для верстки сайта
 
@@ -113,7 +130,8 @@
 
 1. Project name - "Project: Place". 4-5-6 sprints, Project work #4-5-6.
 
-2. This project is used to consolidate the theoretical material in the Yandex Practicum "Web Developer" training program.
+2. This project is used to consolidate the theoretical material in the Yandex Practicum "Web Developer" training program. As a result of the implementation of PW4-PW7, an adaptive site was made from the FIGMA layouts, which was subsequently launched on GITHAB and made available to the public with the help of Diploy -
+[Website link] - (https://nevedomskiy.github.io/mesto/)
 
    During 4 sprints, the following methods were researched and applied:
    -Acquaintance with the HOUSE:
@@ -184,9 +202,26 @@
       c) Associate JS validation methods with DOM;
       d) Validation of several fields and forms;
       e) Interaction with other DOM elements;
+   During 7 sprints, the following methods were researched and applied:
+   -Object Oriented Programming:
+      a) Objects in OOP;
+      b) Class;
+      c) a brief dive into it;
+      d) encapsulation;
+      e) Inheritance;
+      e) polymorphism;
+   - OOP in interfaces:
+      a) Intraclass markup template;
+      b) Adding data to the markup and placement in the DOM;
+      c) preparing the class for scaling;
+      d) event handlers;
+   -Modules in JS:
+      a) IIFE;
+      b) Encapsulation and modules;
+      c) What is a module and how to use it;
+      d) Export and Import Directives;
+      e) Features of the modules in the browser;
 
-As a result of the implementation of PW4, PW5 and PW6, an adaptive site was made from the FIGMA layouts, which was subsequently launched on GITHAB and made available to the public with the help of Diploy -
-[Website link] - (https://nevedomskiy.github.io/mesto/)
 
 3. Links to export resources for site layout
 

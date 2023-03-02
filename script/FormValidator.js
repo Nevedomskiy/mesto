@@ -5,15 +5,16 @@ class FormValidator {
       this._formSelector = config.formSelector;
       this._inputSelector = config.inputSelector;
       this._errorClass = config.errorClass;
-      this._buttonSubmitSelector = config.buttonSubmitSelector;
+      this._buttonSubmit = this._form.querySelector(config.buttonSubmitSelector);
       this._buttonSubmitDisabledClass = config.buttonSubmitDisabledClass;
+      this._inputList = Array.from(this._form.querySelectorAll(this._inputSelector));
    }
-//отключение стандартной отправки данных при событии submit
+   //отключение стандартной отправки данных при событии submit
    _disableSubmit(evt) {
       evt.preventDefault();
 
    }
-//запуск валидации(публичный, потому что используется для запуска валидации в других файлах)
+   //запуск валидации(публичный, потому что используется для запуска валидации в других файлах)
    enabledValidationForm() {
       this._addInputListners();
       this._form.addEventListener('submit', this._disableSubmit);
@@ -21,34 +22,42 @@ class FormValidator {
       this.toggleButton();
    }
 
-//вешаем слушатели на все поля инпутов
+   //вешаем слушатели на все поля инпутов
    _addInputListners() {
-      this._inputList = Array.from(this._form.querySelectorAll(this._inputSelector));
       this._inputList.forEach((inputElement) => {
-         inputElement.addEventListener('input', (evt) => { this._handleFormInput(evt) });
+         inputElement.addEventListener('input', () => { this._handleFormInput(inputElement) });
       })
    }
-//проверяем валидность формы (показываем стиль ошибки и его текст или удаляем его)
-   _handleFormInput(evt) {
-      this._inputEvent = evt.target;
-      this._inputEventId = this._inputEvent.id;
-      this._spanError = this._form.querySelector(`#${this._inputEventId}-error`);
-      if (this._inputEvent.validity.valid) {
-         this._inputEvent.classList.remove(this._errorClass);
+
+   //проверка валидации(используется для проверки полей инпутов при открытии попапа)
+   checkValidation() {
+      this._inputList.forEach((inputElement) => {
+         this._handleFormInput(inputElement)
+      })
+   }
+
+   //проверяем валидность формы (показываем стиль ошибки и его текст или удаляем его)
+   _handleFormInput(inputElement) {
+      this._inputElement = inputElement;
+      this._inputElementId = this._inputElement.id;
+      this._spanError = this._form.querySelector(`#${this._inputElementId}-error`);
+      if (this._inputElement.validity.valid) {
+         this._inputElement.classList.remove(this._errorClass);
          this._spanError.textContent = '';
       }
       else {
-         this._inputEvent.classList.add(this._errorClass);
-         this._spanError.textContent = this._inputEvent.validationMessage;
+         this._inputElement.classList.add(this._errorClass);
+         this._spanError.textContent = this._inputElement.validationMessage;
       }
    }
-//блокировка кнопки невалидной кнопки(используется снаружи при открытии попапов, поэтому публичный)
+   //блокировка кнопки невалидной кнопки(используется снаружи при открытии попапов, поэтому публичный)
    toggleButton() {
-      this._buttonSubmit = this._form.querySelector(this._buttonSubmitSelector);
       this._isFormValid = this._form.checkValidity();
       this._buttonSubmit.disabled = !this._isFormValid;
       this._buttonSubmit.classList.toggle(this._buttonSubmitDisabledClass, !this._isFormValid);
    }
+
+
 
 }
 
