@@ -39,14 +39,12 @@ function openPopup(popup) {
    popup.classList.add('popup_active');
    popup.addEventListener('mousedown', listenerClickOverley);
    document.addEventListener('keydown', handlePopupCloseEsc);
-   formValidationProfile.checkValidation();
 }
 
 function closePopup(popup) {
    popup.classList.remove('popup_active');
    popup.removeEventListener('mousedown', listenerClickOverley);
    document.removeEventListener('keydown', handlePopupCloseEsc);
-
 }
 
 function listenerClickOverley(evt) {
@@ -95,9 +93,9 @@ function handleAddNewCard(evt) {
       link: popupPlaceLink.value
    };
    createNewCard(newCardData);
+   closePopup(popupPlace);
    popupPlaceName.value = '';
    popupPlaceLink.value = '';
-   closePopup(popupPlace);
 }
 
 initialCards.forEach((arrayElement) => {
@@ -108,6 +106,7 @@ initialCards.forEach((arrayElement) => {
 btnEditProfile.addEventListener('click', (evt) => {
    handleOpenPopupProfile(evt);
    formValidationProfile.enabledValidationForm();
+   formValidationProfile.checkValidation();
 });
 formProfile.addEventListener('submit', handleChangePopupProfile);
 btnAddCard.addEventListener('click', () => {
