@@ -10,7 +10,9 @@ module.export = {
 
       // использовать полифиллы для браузеров из свойства target
       // по умолчанию babel использует поллифиллы библиотеки core-js
-      useBuiltIns: "entry"
+      useBuildIns: "entry",
+      corejs: "3.29"
    }
    ]
+
 }
