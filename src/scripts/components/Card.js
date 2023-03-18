@@ -46,12 +46,3 @@ export class Card {
       this._photoLike.classList.toggle('photo__like_active');
    }
 }
-
-
-
-
-
-
-
-
-

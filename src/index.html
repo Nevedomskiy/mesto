@@ -12,7 +12,7 @@
   <link rel="mask-icon" href="./vendor/favicon/safari-pinned-tab.svg" color="#000000">
   <meta name="msapplication-TileColor" content="#2d89ef">
   <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="./pages/index.css" />
+
   <title>Место</title>
 </head>
 
@@ -20,15 +20,15 @@
   <div class="page">
     <header class="header">
       <picture>
-        <source media="(max-width: 1023px)" srcset="./images/logo103-24.svg" />
-        <source media="(min-width: 1024px)" srcset="./images/logo142-33.svg" />
-        <img src="./images/logo142-33.svg" class="header__logo" alt="Логотип 'Место-Россия'" />
+        <source media="(max-width: 1023px)" srcset="<%=require('./images/logo103-24.svg')%>" />
+        <source media="(min-width: 1024px)" srcset="<%=require('./images/logo142-33.svg')%>" />
+        <img src="<%=require('./images/logo142-33.svg')%>" class="header__logo" alt="Логотип 'Место-Россия'" />
       </picture>
     </header>
     <main class="content">
       <section class="profile">
         <div class="profile__info">
-          <img src="./images/face.jpg" alt="Аватарка" class="profile__avatar">
+          <img src="<%=require('./images/face.jpg')%>" alt="Аватарка" class="profile__avatar">
           <div class="profile__content">
             <div class="profile__text">
               <div class="profile__block-name">
@@ -102,7 +102,7 @@
       <button type="button" aria-label="Удалить" class="photo__delete"></button>
     </li>
   </template>
-  <script type="module" src="./script/script.js"></script>
+
 </body>
 
 </html>

@@ -3,7 +3,7 @@
    padding-top: 28px;
 }
 
-@media screen and (min-width: 1124px) {
+@media screen and (min-width: 1024px) {
    .header {
       margin: 0 200px 38px;
       padding-top: 45px;

@@ -1,8 +1,8 @@
 **Для русскоязычных пользователей**
 
-1. Название проекта - "Проект: Место". 4-5-6 спринты, Проектная работа №4-5-6.
+1. Название проекта - "Проект: Место". 4-8 спринты, Проектная работа №4-8.
 
-2. Данный проект используется для закрепленния теоритеческого материала в программе обучения ЯндексПрактикума "Веб-разработчик". В результате выполнения ПР4-ПР7 из макетов FIGMA был сверстан адаптивный сайт, который в последующем был запушен на GITHAB и с помощью Diploy выложен в публичный доступ - [Ссылка на сайт] - (https://nevedomskiy.github.io/mesto/)
+2. Данный проект используется для закрепленния теоритеческого материала в программе обучения ЯндексПрактикума "Веб-разработчик". В результате выполнения ПР4-ПР8 из макетов FIGMA был сверстан адаптивный сайт, который в последующем был запушен на GITHAB и с помощью Diploy выложен в публичный доступ - [Ссылка на сайт] - (https://nevedomskiy.github.io/mesto/)
 
    Во время 4 спринта были изучены и применены методы:
    -Знакомство с DOM:
@@ -94,6 +94,32 @@
       г)Директивы export и import;
       д)Особенности работы модулей в браузере;
 
+      Во время 8 спринта были изучены и применены методы:
+   -Деструктуризация:
+      а)Деструктуризация объектов;
+      б)Деструктуризация массива;
+      в)Параметры функции;
+      г)Параметры метода или конструктора класса;
+      д)Значения по умолчанию;
+   -ООП в интерфейсах:
+      а)Структура файлов в проекте;
+      б)Создание нескольких классов;
+      в)Слои в проекте;
+      г)Описание связей между классами;
+      д)Работа со слушателями событий;
+   -Привязка this:
+      а)Способы привязки this;
+      б)Метод bind;
+   -Сборка проекта. Webpack:
+      а)Библиотека пакетов NPM;
+      б)Подключаем репозиторий NPM;
+      в)Настраиваем сборку. Настроим Webpack;
+      г)Cтавим Babel;
+      д)Настраиваем обработку HTML;
+      е)Настраиваем обработку изображений и шрифтов;
+      ж)Настраиваем обработку CSS;
+      з)Минификация CSS и добавление префиксов;
+
 3. Ссылки на сторонник ресурсы для верстки сайта
 
    **GITHUB**
@@ -128,10 +154,9 @@
 
 **For English speaking users**
 
-1. Project name - "Project: Place". 4-5-6 sprints, Project work #4-5-6.
+1. Project name - "Project: Place". Sprints 4-8, Project work #4-8.
 
-2. This project is used to consolidate the theoretical material in the Yandex Practicum "Web Developer" training program. As a result of the implementation of PW4-PW7, an adaptive site was made from the FIGMA layouts, which was subsequently launched on GITHAB and made available to the public with the help of Diploy -
-[Website link] - (https://nevedomskiy.github.io/mesto/)
+2. This project is used to consolidate the theoretical material in the Yandex Practicum "Web Developer" training program. As a result of the implementation of PR4-PR8, an adaptive site was made from the FIGMA layouts, which was subsequently launched on GITHAB and made available to the public with the help of Diploy - [Website link] - (https://nevedomskiy.github.io/mesto/)
 
    During 4 sprints, the following methods were researched and applied:
    -Acquaintance with the HOUSE:
@@ -210,7 +235,7 @@
       d) encapsulation;
       e) Inheritance;
       e) polymorphism;
-   - OOP in interfaces:
+   -OOP in interfaces:
       a) Intraclass markup template;
       b) Adding data to the markup and placement in the DOM;
       c) preparing the class for scaling;
@@ -221,7 +246,31 @@
       c) What is a module and how to use it;
       d) Export and Import Directives;
       e) Features of the modules in the browser;
-
+   During the 8 sprints, the following methods were researched and applied:
+   -Destructuring:
+      a) Destructuring of objects;
+      b) Array destructuring;
+      c) function parameters;
+      d) parameters of a method or class constructor;
+      e) Default values;
+   -OOP in interfaces:
+      a) The structure of the files in the project;
+      b) Creation of several classes;
+      c) Layers in the project;
+      d) Description of relationships between classes;
+      e) Working with event listeners;
+   -This binding:
+      a) Ways to bind this;
+      b) Bind method;
+   -Assembling the project. webpack:
+      a) NPM package library;
+      b) We connect the NPM repository;
+      c) Set up the assembly. Set up webpack
+      d) Install Babel;
+      e) Set up HTML processing;
+      f) Set up the processing of images and fonts;
+      g) Set up CSS processing;
+      h) Minifying CSS and adding prefixes;
 
 3. Links to export resources for site layout
 
