@@ -4,37 +4,38 @@ export default class Popup {
       this._btnClose = this._popup.querySelector('.btn-close');
    }
 
-   openPopup() {
+   open() {
       this._popup.classList.add('popup_active');
+      this._handleEscClose();
    };
 
-   closePopup() {
-      this._deleteEventLesteners();
+   close() {
       this._popup.classList.remove('popup_active');
-   };
-   
-   _setEventLesteners() {
-      this._popup.addEventListener('mousedown', this._listenerClickOverley);
-      document.addEventListener('keydown', this._handlePopupCloseEsc);
-      this._btnClose.addEventListener('click', () => { this.closePopup() });
+      this._removeEscClose();
    };
 
-   _deleteEventLesteners() {
-      this._popup.removeEventListener('mousedown', this._listenerClickOverley);
+   _handleEscClose() {
+      document.addEventListener('keydown', this._handlePopupCloseEsc);
+   }
+
+   _removeEscClose() {
       document.removeEventListener('keydown', this._handlePopupCloseEsc);
-      this._btnClose.removeEventListener('click', () => { this.closePopup() });
+   }
+
+   setEventLesteners() {
+      this._popup.addEventListener('mousedown', this._listenerClickOverley);
+      this._btnClose.addEventListener('click', () => { this.close() });
    };
 
    _listenerClickOverley = (evt) => {
       if (evt.target === evt.currentTarget) {
-         this.closePopup();
+         this.close();
       }
    };
 
    _handlePopupCloseEsc = (evt) => {
       if (evt.key === 'Escape') {
-         this.closePopup();
-
+         this.close();
       }
    };
 }

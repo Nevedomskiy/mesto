@@ -32,15 +32,22 @@ class FormValidator {
    //проверка валидации(используется для проверки полей инпутов при открытии попапа)
    checkValidation() {
       this._inputList.forEach((inputElement) => {
-         this._handleFormInput(inputElement)
+         this._setParametersInput(inputElement);
+         inputElement.classList.remove(this._errorClass);
+         this._spanError.textContent = '';
       })
+   }
+
+   // назначает переменные по селектору инпута
+   _setParametersInput(inputElement) {
+      this._inputElement = inputElement;
+      this._inputElementId = this._inputElement.id;
+      this._spanError = this._form.querySelector(`#${this._inputElementId}-error`);
    }
 
    //проверяем валидность формы (показываем стиль ошибки и его текст или удаляем его)
    _handleFormInput(inputElement) {
-      this._inputElement = inputElement;
-      this._inputElementId = this._inputElement.id;
-      this._spanError = this._form.querySelector(`#${this._inputElementId}-error`);
+      this._setParametersInput(inputElement);
       if (this._inputElement.validity.valid) {
          this._inputElement.classList.remove(this._errorClass);
          this._spanError.textContent = '';
