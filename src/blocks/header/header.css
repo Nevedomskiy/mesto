@@ -1,11 +1,11 @@
 .header {
-   margin: 0 27px 27px;
-   padding-top: 28px;
+  margin: 0 27px 27px;
+  padding-top: 28px;
 }
 
 @media screen and (min-width: 1024px) {
-   .header {
-      margin: 0 200px 38px;
-      padding-top: 45px;
-   }
+  .header {
+    margin: 0 200px 38px 203px;
+    padding-top: 45px;
+  }
 }

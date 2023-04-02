@@ -1,6 +1,6 @@
 **Для русскоязычных пользователей**
 
-1. Название проекта - "Проект: Место". 4-8 спринты, Проектная работа №4-8.
+1. Название проекта - "Проект: Место". 4-9 спринты, Проектная работа №4-9.
 
 2. Данный проект используется для закрепленния теоритеческого материала в программе обучения ЯндексПрактикума "Веб-разработчик". В результате выполнения ПР4-ПР8 из макетов FIGMA был сверстан адаптивный сайт, который в последующем был запушен на GITHAB и с помощью Diploy выложен в публичный доступ - [Ссылка на сайт] - (https://nevedomskiy.github.io/mesto/)
 
@@ -120,6 +120,27 @@
       ж)Настраиваем обработку CSS;
       з)Минификация CSS и добавление префиксов;
 
+      Во время 9 спринта были изучены и применены методы:
+   -Асинхронные операции:
+      а)Колбэки;
+      б)Асинхронные колбэки;
+      в)Таймеры;
+      г)Event Loop;
+      д)Promise;
+   -Работа с API:
+      а)Протокол HTTP;
+      б)Запросы из JavaScript;
+      в)Формат JSON;
+      г)HTTP-запрос и ответ;
+      д)Инструменты: вкладка Network;
+   -Прототипы объектов:
+      а)Свойство __proto__;
+      б)Метод Object.create;
+      в)Оператор new;
+      г)Свойство prototype;
+      д)Встроенные конструкторы и их прототипы;
+      е)Прототипное наследование;
+
 3. Ссылки на сторонник ресурсы для верстки сайта
 
    **GITHUB**
@@ -129,9 +150,10 @@
    [Ссылка на сайт](https://developer.mozilla.org/ru/docs/Web/CSS)
 
    **Figma**
-   [Ссылка на макет в Figma ПР4](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?t=ybH75czb5wz4FZfl-0)
+   [Ссылка на макет в Figma ПР4](https ://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?t=ybH75czb5wz4FZfl-0)
    [Ссылка на макет в Figma ПР5](https://www.figma.com/file/bjyvbKKJN2naO0ucURl2Z0/JavaScript.-Sprint-5?node-id=50160%3A347&t=TaShR0ur8yKeeiY8-0)
    [Ссылка на макет в Figma ПР6](https://www.figma.com/file/kRVLKwYG3d1HGLvh7JFWRT/JavaScript.-Sprint-6?node-id=1124%3A73&t=VhJyIu7o9N4NzeNw-0)
+    [Ссылка на макет в Figma ПР9](https://www.figma.com/file/PSdQFRHoxXJFs2FH8IXViF/JavaScript.-Sprint-9?node-id=109-315&t=31I8asnDbe8w3Sv0-0)
 
    **Оптимизация картинкок**
    [Ссылка на сайт](https://tinypng.com/)
@@ -154,7 +176,7 @@
 
 **For English speaking users**
 
-1. Project name - "Project: Place". Sprints 4-8, Project work #4-8.
+1. Project name - "Project: Place". Sprints 4-9, Project work #4-9.
 
 2. This project is used to consolidate the theoretical material in the Yandex Practicum "Web Developer" training program. As a result of the implementation of PR4-PR8, an adaptive site was made from the FIGMA layouts, which was subsequently launched on GITHAB and made available to the public with the help of Diploy - [Website link] - (https://nevedomskiy.github.io/mesto/)
 
@@ -271,6 +293,26 @@
       f) Set up the processing of images and fonts;
       g) Set up CSS processing;
       h) Minifying CSS and adding prefixes;
+     During the 9th sprint , the methods were studied and applied:
+   -Asynchronous operations:
+      a)Callbacks;
+      b)Asynchronous callbacks;
+      c)Timers;
+      d)Event Loop;
+      e)Promise;
+   -Working with the API:
+      a)HTTP Protocol;
+      b)Requests from JavaScript;
+      c)JSON format;
+      d)HTTP request and response;
+      e)Tools: Network tab;
+   -Prototypes of objects:
+      a)__proto property__;
+      b)Object.create method;
+      c)The new operator;
+      d)Prototype property;
+      e)Built-in constructors and their prototypes;
+      f)Prototype inheritance;
 
 3. Links to export resources for site layout
 
@@ -284,6 +326,7 @@
 [Link to layout in Figma PW4](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?t=ybH75czb5wz4FZfl-0)
 [Link to layout in Figma PW5](https://www.figma.com/file/bjyvbKKJN2naO0ucURl2Z0/JavaScript.-Sprint-5?node-id=50160%3A347&t=TaShR0ur8yKeeiY8-0)
 [Link to layout in Figma PW6](https://www.figma.com/file/kRVLKwYG3d1HGLvh7JFWRT/JavaScript.-Sprint-6?node-id=1124%3A73&t=VhJyIu7o9N4NzeNw-0)
+[Link to layout in Figma PW9](https://www.figma.com/file/PSdQFRHoxXJFs2FH8IXViF/JavaScript.-Sprint-9?node-id=109-315&t=31I8asnDbe8w3Sv0-0)
 
 **Picture Optimization**
 [Website Link](https://tinypng.com/)
