@@ -4,6 +4,11 @@ export default class Api {
     this._authorization = config.headers.authorization
   }
 
+  _getResponseData(res) {
+    if (res.ok) { return res.json() }
+    return Promise.reject(`Что-то пошло не так: ${res.status}`);
+  }
+
   //получение данных карточек
   getDataCards() {
     return fetch(`${this._url}cards`, {
@@ -14,12 +19,8 @@ export default class Api {
       }
     })
       .then((res) => {
-        if (res.ok) { return res.json() }
-        return Promise.reject(`Что-то пошло не так: ${res.status}`);
+        return this._getResponseData(res);
       })
-      .catch((err) => {
-        console.log(err);
-      });
   }
 
   //получение данных пользователя
@@ -32,18 +33,13 @@ export default class Api {
       }
     })
       .then((res) => {
-        if (res.ok) { return res.json() }
-        return Promise.reject(`Что-то пошло не так: ${res.status}`);
+        return this._getResponseData(res);
       })
-      .catch((err) => {
-        console.log(err);
-      });
+
   }
 
   //редактирование данных пользователя
-  patchDataProfile(data, reloudButtonProfile) {
-    this._reloudButtonProfile = reloudButtonProfile;
-    this._reloudButtonProfile.hiddenButton();
+  patchDataProfile(data) {
     return fetch(`${this._url}users/me`, {
       method: 'PATCH',
       headers: {
@@ -56,19 +52,12 @@ export default class Api {
       })
     })
       .then((res) => {
-        if (res.ok) { return res.json() }
-        return Promise.reject(`Что-то пошло не так: ${res.status}`);
+        return this._getResponseData(res);
       })
-      .catch((err) => {
-        console.log(err);
-      })
-      .finally(() => { this._reloudButtonProfile.unhiddenButton() })
   }
 
   //редактирование аватара
-  patchAvatarProfile(data, reloudButtonAvatar) {
-    this._reloudButtonAvatar = reloudButtonAvatar;
-    this._reloudButtonAvatar.hiddenButton();
+  patchAvatarProfile(data) {
     return fetch(`${this._url}users/me/avatar`, {
       method: 'PATCH',
       headers: {
@@ -80,19 +69,12 @@ export default class Api {
       })
     })
       .then((res) => {
-        if (res.ok) { return res.json() }
-        return Promise.reject(`Что-то пошло не так: ${res.status}`);
+        return this._getResponseData(res);
       })
-      .catch((err) => {
-        console.log(err);
-      })
-      .finally(() => { this._reloudButtonAvatar.unhiddenButton() })
   }
 
   //создание новой карточки
-  postNewCard(data, reloudButtonPlace) {
-    this._reloudButtonPlace = reloudButtonPlace;
-    this._reloudButtonPlace.hiddenButton();
+  postNewCard(data) {
     return fetch(`${this._url}cards`, {
       method: 'POST',
       headers: {
@@ -105,18 +87,13 @@ export default class Api {
       })
     })
       .then((res) => {
-        if (res.ok) { return res.json() }
-        return Promise.reject(`Что-то пошло не так: ${res.status}`);
+        return this._getResponseData(res);
       })
-      .catch((err) => {
-        console.log(err);
-      })
-      .finally(() => { this._reloudButtonPlace.unhiddenButton() })
   }
 
   //удаление карточки
-  deleteCard(data) {
-    return fetch(`${this._url}cards/${data._id}`, {
+  deleteCard(dataId) {
+    return fetch(`${this._url}cards/${dataId}`, {
       method: 'DELETE',
       headers: {
         'content-type': 'application/json',
@@ -124,55 +101,36 @@ export default class Api {
       }
     })
       .then((res) => {
-        if (res.ok) {
-          return res.json()
-        }
-        return Promise.reject(`Что-то пошло не так: ${res.status}`);
+        return this._getResponseData(res);
       })
-      .catch((err) => {
-        console.log(err);
-      });
   }
 
   //добавление лайка
-  addLikes(data, userData) {
-    return fetch(`${this._url}cards/${data._id}/likes`, {
+  addLikes(dataId) {
+    return fetch(`${this._url}cards/${dataId}/likes`, {
       method: 'PUT',
       headers: {
         'content-type': 'application/json',
         authorization: this._authorization
-      },
-      body: JSON.stringify({
-        data: userData.data
-      })
+      }
     })
       .then((res) => {
-        if (res.ok) { return res.json() }
-        return Promise.reject(`Что-то пошло не так: ${res.status}`);
+        return this._getResponseData(res);
       })
-      .catch((err) => {
-        console.log(err);
-      });
   }
 
   //удаление лайка
-  deleteLikes(data, userData) {
-    return fetch(`${this._url}cards/${data._id}/likes/`, {
+  deleteLikes(dataId) {
+    return fetch(`${this._url}cards/${dataId}/likes/`, {
       method: 'DELETE',
       headers: {
         'content-type': 'application/json',
         authorization: this._authorization
-      }, body: JSON.stringify({
-        data: userData.data
-      })
+      }
     })
       .then((res) => {
-        if (res.ok) { return res.json() }
-        return Promise.reject(`Что-то пошло не так: ${res.status}`);
+        return this._getResponseData(res);
       })
-      .catch((err) => {
-        console.log(err);
-      });
   }
 }
 
