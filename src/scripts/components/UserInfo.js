@@ -1,9 +1,15 @@
 export default class UserInfo {
-  constructor(nameProfile, subNameProfile, profileAvatar, userDataServer) {
+  constructor(nameProfile, subNameProfile, profileAvatar) {
     this._nameProfile = nameProfile;
     this._subNameProfile = subNameProfile;
     this._profileAvatar = profileAvatar;
-    this._userDataServer = userDataServer;
+  }
+
+  setUserInfo(data) {
+    this._nameProfile.textContent = data.name;
+    this._subNameProfile.textContent = data.about;
+    this._profileAvatar.src = data.avatar;
+    this._idUser = data._id
   }
 
   getUserInfo() {
@@ -11,16 +17,9 @@ export default class UserInfo {
     this._dataList['name'] = this._nameProfile.textContent;
     this._dataList['about'] = this._subNameProfile.textContent;
     this._dataList['avatar'] = this._profileAvatar.src;
+    this._dataList['id'] = this._idUser;
     return this._dataList;
   }
-
-  setUserInfo(data) {
-    this._userDataServer.data = data;
-    this._nameProfile.textContent = data.name;
-    this._subNameProfile.textContent = data.about;
-    this._profileAvatar.src = data.avatar;
-  }
-
 };
 
 

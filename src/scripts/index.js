@@ -10,9 +10,6 @@ import PopupWithForm from './components/PopupWithForm.js';
 import UserInfo from './components/UserInfo.js';
 import Api from './api/api.js';
 
-//массив данных пользователя(позже его заполним при получении данных с сервера)
-const userDataServer = {}
-
 //api данных карточек
 const api = new Api({
   url: 'https://mesto.nomoreparties.co/v1/cohort-62/',
@@ -22,9 +19,10 @@ const api = new Api({
 });
 
 //экземпляр класса UserInfo,необходим для получения данных из полей инпутов
-const userInfo = new UserInfo(profileName, profileSubName, profileAvatar, userDataServer);
-const userDataHtml = userInfo.getUserInfo();
+const userInfo = new UserInfo(profileName, profileSubName, profileAvatar);
 
+//объект данных пользователя, объявляю в глобальной области, потому что данные будут получены, только после запроса на сервер, а используются они в разных функциях
+let userData = {};
 
 //экземпляр класса PopupWithConfirm
 const popupRemoveCard = new PopupWithConfirm(
@@ -36,37 +34,39 @@ popupRemoveCard.setEventListeners();
 //экземпляр секции с рендером карточек
 const cardsSection = new Section({
   renderer: (cardData) => {
-    renderCards(cardData)
+    renderCard(cardData)
   }
 }, photoContainer);
 
+
 Promise.all([api.getDataProfile(), api.getDataCards()]).then((result) => {
   userInfo.setUserInfo(result[0]);
-  cardsSection.renderItems(result[1]);
+  userData = userInfo.getUserInfo();
+  cardsSection.renderItems(result[1].reverse());
 })
   .catch((err) => {
     console.log(err);
   });
 
 //функция рендера карточки
-function renderCards(cardData) {
-  cardsSection.addItem(createClassCard(cardData).createCard());
+function renderCard(cardData) {
+  cardsSection.addItem(createCard(cardData).createCard());
 }
 
 //функция создания экземпляра класса Card
-function createClassCard(cardData) {
+function createCard(cardData) {
   const card = new Card(
     cardData,
     photoTemplate,
-    userDataServer.data._id,
+    userData.id,
     () => {
       popupImage.open(cardData);
     },
     () => {
       api.addLikes(cardData._id)
         .then((result) => {
-          card.editClassLike();
-          card.handleLikeCounter(result.likes.length);
+          card.toggleLike();
+          card.setLikesCount(result.likes.length);
         })
         .catch((err) => {
           console.log(err);
@@ -76,8 +76,8 @@ function createClassCard(cardData) {
     () => {
       api.deleteLikes(cardData._id)
         .then((result) => {
-          card.editClassLike();
-          card.handleLikeCounter(result.likes.length);
+          card.toggleLike();
+          card.setLikesCount(result.likes.length);
         })
         .catch((err) => {
           console.log(err);
@@ -85,7 +85,7 @@ function createClassCard(cardData) {
     }
     ,
     {
-      render:
+      handleDelete:
         () => {
           popupRemoveCard.open();
           popupRemoveCard.setCallback(
@@ -174,7 +174,8 @@ const popupFormPhoto = new PopupWithForm(
       popupFormPhoto.setSubmitButtonText('Сохранение...');
       api.postNewCard(cardData)
         .then((result) => {
-          renderCards(result);
+
+          renderCard(result);
           popupFormPhoto.close();
         })
         .catch((err) => {
@@ -197,8 +198,8 @@ btnEditAvatar.addEventListener('click', () => {
 
 //слушатель событий кнопки редактирования профиля
 btnEditProfile.addEventListener('click', () => {
-  popupProfileName.value = userDataHtml.name;
-  popupProfileProfession.value = userDataHtml.about;
+  popupProfileName.value = userData.name;
+  popupProfileProfession.value = userData.about;
   popupClassProfile.open();
   formValidationProfile.toggleButton();
   formValidationProfile.checkValidation();

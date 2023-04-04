@@ -1,13 +1,13 @@
 //класс создания карточек
 export class Card {
-  constructor(data, template, userId, handleImageClick, like, dislike, { render: getCallbackData }) {
+  constructor(data, template, userId, handleImageClick, handleLike, handleDislike, { handleDelete: handleDelete }) {
     this._cardData = data;
     this._photoTemplate = template;
     this._handleImageClick = handleImageClick;
-    this._like = like;
-    this._dislike = dislike;
+    this._handleLike = handleLike;
+    this._handleDislike = handleDislike;
     this._userId = userId;
-    this._handleButtonDelete = getCallbackData;
+    this._handleButtonDelete = handleDelete;
   }
 
   //метод генерации карточки
@@ -25,10 +25,10 @@ export class Card {
     };
     this._photoLike = this._photoElementClone.querySelector('.photo__like');
     if (this._cardData.likes.find(element => element._id == this._userId)) {
-      this.editClassLike();
+      this.toggleLike();
     };
     this._photoLikeCounter = this._photoElementClone.querySelector('.photo__like-counter');
-    this.handleLikeCounter(this._cardData.likes.length);
+    this.setLikesCount(this._cardData.likes.length);
     this._setEventListeners();
     return this._photoElementClone;
   };
@@ -52,22 +52,22 @@ export class Card {
   }
 
   //медод изменения стиля лайка
-  editClassLike() {
+  toggleLike() {
     this._photoLike.classList.toggle('photo__like_active');
   }
 
   //медод присвоения количества лайков
-  handleLikeCounter(number) {
+  setLikesCount(number) {
     this._photoLikeCounter.textContent = number;
   }
 
   //метод лайка карточки
   _handleLikeClick() {
     if (!this._photoLike.classList.contains("photo__like_active")) {
-      this._like();
+      this._handleLike();
     }
     else {
-      this._dislike();
+      this._handleDislike();
     }
   }
 }
