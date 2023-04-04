@@ -21,9 +21,6 @@ const api = new Api({
 //экземпляр класса UserInfo,необходим для получения данных из полей инпутов
 const userInfo = new UserInfo(profileName, profileSubName, profileAvatar);
 
-//объект данных пользователя, объявляю в глобальной области, потому что данные будут получены, только после запроса на сервер, а используются они в разных функциях
-let userData = {};
-
 //экземпляр класса PopupWithConfirm
 const popupRemoveCard = new PopupWithConfirm(
   popupConfirmation);
@@ -41,7 +38,6 @@ const cardsSection = new Section({
 
 Promise.all([api.getDataProfile(), api.getDataCards()]).then((result) => {
   userInfo.setUserInfo(result[0]);
-  userData = userInfo.getUserInfo();
   cardsSection.renderItems(result[1].reverse());
 })
   .catch((err) => {
@@ -58,7 +54,7 @@ function createCard(cardData) {
   const card = new Card(
     cardData,
     photoTemplate,
-    userData.id,
+    userInfo.getUserInfo().id,
     () => {
       popupImage.open(cardData);
     },
@@ -198,8 +194,8 @@ btnEditAvatar.addEventListener('click', () => {
 
 //слушатель событий кнопки редактирования профиля
 btnEditProfile.addEventListener('click', () => {
-  popupProfileName.value = userData.name;
-  popupProfileProfession.value = userData.about;
+  popupProfileName.value = userInfo.getUserInfo().name;
+  popupProfileProfession.value = userInfo.getUserInfo().about;
   popupClassProfile.open();
   formValidationProfile.toggleButton();
   formValidationProfile.checkValidation();
