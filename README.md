@@ -14,132 +14,132 @@
     * События;
     * Гибкая вставка: методы insertAdjacentHTML и insertAdjacentText.
   - Дебаггинг JavaScript:
-    1. Как читать ошибки;
-    2. Типы ошибок;
-    3. Логические ошибки и console.log;
-    4. Отладка через debugger.
+    * Как читать ошибки;
+    * Типы ошибок;
+    * Логические ошибки и console.log;
+    * Отладка через debugger.
   - Git:
-    1. Конфликты;
-    2. Отмена слияния веток;
-    3. Идеальный коммит;
-    4. Прячем незакоммиченные изменения.
+    * Конфликты;
+    * Отмена слияния веток;
+    * Идеальный коммит;
+    * Прячем незакоммиченные изменения.
 
 **Во время 5 спринта были изучены и применены методы:**
   - Создание, добавление и удаление элементов в DOM:
-    1. Создание элементов: createElement и createTextNode;
-    2. Добавление элементов на страницу. Методы append, prepend, before, after и replaceWith;
-    3. Удаление и перемещение элементов. Методы remove и closest;
-    4. Клонирование элементов. Метод cloneNode;
-    5. template-элементы;
-    6. Объект event. Метод addEventListener - объект event, свойство target;
-    7. Родственные связи в DOM: свойства parentElement, children, firstElementChild и lastElementChild, previousElementSibling и nextElementSibling.
+    * Создание элементов: createElement и createTextNode;
+    * Добавление элементов на страницу. Методы append, prepend, before, after и replaceWith;
+    * Удаление и перемещение элементов. Методы remove и closest;
+    * Клонирование элементов. Метод cloneNode;
+    * template-элементы;
+    * Объект event. Метод addEventListener - объект event, свойство target;
+    * Родственные связи в DOM: свойства parentElement, children, firstElementChild и lastElementChild, previousElementSibling и nextElementSibling.
   - Массивы:
-    1. Объединение и преобразование в строку. Метод concat. Метод join.
-    2. Добавление и удаление последнего элемента: метод push, pop;
-    3. Добавление и удаление первого элемента: метод shift, unshift;
-    4. Управление элементами на любых позициях: метод slice, splice.
-    5. Коллекции в DOM. Метод Array.from;
-    6. Перебор массива. Методы forEach и map;
-    7. Функции обратного вызова и их 3 аргумента;
-    8. Отбор элементов массива: метод filter, some, every, find;
-    9. Сведение массива. Метод reduce. Метод sort
-    10. Императивное и декларативное программирование;
+    * Объединение и преобразование в строку. Метод concat. Метод join.
+    * Добавление и удаление последнего элемента: метод push, pop;
+    * Добавление и удаление первого элемента: метод shift, unshift;
+    * Управление элементами на любых позициях: метод slice, splice.
+    * Коллекции в DOM. Метод Array.from;
+    * Перебор массива. Методы forEach и map;
+    * Функции обратного вызова и их 3 аргумента;
+    * Отбор элементов массива: метод filter, some, every, find;
+    * Сведение массива. Метод reduce. Метод sort
+    * Императивное и декларативное программирование;
   - Git:
-    1. Merge tools;
-    2. SSH повторение;
+    * Merge tools;
+    * SSH повторение;
 
 **Во время 6 спринта были изучены и применены методы:**
   - Объекты:
-    1. Создание объектов и запись свойств;
-    2. Обращение к свойству;
-    3. Операторы: delete, in;
-    4. Перебор свойств. Цикл for...in. Object.entries, Object.keys и Object.values;
-    5. Передача по ссылке. Сравнение объектов. Поверхностное и глубокое копирование объектов;
-    6. Массивы — это объекты. Функции — это объекты;
+    * Создание объектов и запись свойств;
+    * Обращение к свойству;
+    * Операторы: delete, in;
+    * Перебор свойств. Цикл for...in. Object.entries, Object.keys и Object.values;
+    * Передача по ссылке. Сравнение объектов. Поверхностное и глубокое копирование объектов;
+    * Массивы — это объекты. Функции — это объекты;
   - Обработка событий:
-    1. События клавиатуры. Объект event — клавиатура. Объект event — мышь;
-    2. Снятие слушателя;
-    3. Отмена стандартного поведения браузера;
-    4. Всплытие и делегирование событий. Отмена всплытия;
+    * События клавиатуры. Объект event — клавиатура. Объект event — мышь;
+    * Снятие слушателя;
+    * Отмена стандартного поведения браузера;
+    * Всплытие и делегирование событий. Отмена всплытия;
   - Работа с формами:
-    1. Доступ к форме из JavaScript;
-    2. Отправка формы. Событие submit;
-    3. Получение элементов форм;
-    4. События change и input;
-    5. Методы reset и submit;
+    * Доступ к форме из JavaScript;
+    * Отправка формы. Событие submit;
+    * Получение элементов форм;
+    * События change и input;
+    * Методы reset и submit;
   - Валидация форм:
-    1. Встроенная браузерная валидация форм;
-    2. Валидация с JavaScript;
-    3. Связываем JS-методы валидации с DOM;
-    4. Валидация нескольких полей и форм;
-    5. Взаимодействие с другими элементами DOM;
+    * Встроенная браузерная валидация форм;
+    * Валидация с JavaScript;
+    * Связываем JS-методы валидации с DOM;
+    * Валидация нескольких полей и форм;
+    * Взаимодействие с другими элементами DOM;
 
 **Во время 7 спринта были изучены и применены методы:**
   - Объектно-ориентированное программирование:
-    1. Объекты в ООП;
-    2. Классы;
-    3. Краткое погружение в this;
-    4. Инкапсуляция;
-    5. Наследование;
-    6. Полиморфизм;
+    * Объекты в ООП;
+    * Классы;
+    * Краткое погружение в this;
+    * Инкапсуляция;
+    * Наследование;
+    * Полиморфизм;
   - ООП в интерфейсах:
-    1. Шаблон разметки внутри класса;
-    2. Добавление данных в разметку и размещение в DOM;
-    3. Подготовка класса к масштабированию;
-    4. Обработчики событий;
+    * Шаблон разметки внутри класса;
+    * Добавление данных в разметку и размещение в DOM;
+    * Подготовка класса к масштабированию;
+    * Обработчики событий;
   - Модули в JS:
-    1. IIFE;
-    2. Инкапсуляция и модули;
-    3. Что такое модуль и как его использовать;
-    4. Директивы export и import;
-    5. Особенности работы модулей в браузере;
+    * IIFE;
+    * Инкапсуляция и модули;
+    * Что такое модуль и как его использовать;
+    * Директивы export и import;
+    * Особенности работы модулей в браузере;
 
 **Во время 8 спринта были изучены и применены методы:**
   - Деструктуризация:
-    1. Деструктуризация объектов;
-    2. Деструктуризация массива;
-    3. Параметры функции;
-    4. Параметры метода или конструктора класса;
-    5. Значения по умолчанию;
+    * Деструктуризация объектов;
+    * Деструктуризация массива;
+    * Параметры функции;
+    * Параметры метода или конструктора класса;
+    * Значения по умолчанию;
   - ООП в интерфейсах:
-    1. Структура файлов в проекте;
-    2. Создание нескольких классов;
-    3. Слои в проекте;
-    4. Описание связей между классами;
-    5. Работа со слушателями событий;
+    * Структура файлов в проекте;
+    * Создание нескольких классов;
+    * Слои в проекте;
+    * Описание связей между классами;
+    * Работа со слушателями событий;
   - Привязка this:
-    1. Способы привязки this;
-    2. Метод bind;
+    * Способы привязки this;
+    * Метод bind;
   - Сборка проекта. Webpack:
-    1. Библиотека пакетов NPM;
-    2. Подключаем репозиторий NPM;
-    3. Настраиваем сборку. Настроим Webpack;
-    4. Cтавим Babel;
-    5. Настраиваем обработку HTML;
-    6. Настраиваем обработку изображений и шрифтов;
-    7. Настраиваем обработку CSS;
-    8. Минификация CSS и добавление префиксов;
+    * Библиотека пакетов NPM;
+    * Подключаем репозиторий NPM;
+    * Настраиваем сборку. Настроим Webpack;
+    * Cтавим Babel;
+    * Настраиваем обработку HTML;
+    * Настраиваем обработку изображений и шрифтов;
+    * Настраиваем обработку CSS;
+    * Минификация CSS и добавление префиксов;
 
 **Во время 9 спринта были изучены и применены методы:**
   - Асинхронные операции:
-    1. Колбэки;
-    2. Асинхронные колбэки;
-    3. Таймеры;
-    4. Event Loop;
-    5. Promise;
+    * Колбэки;
+    * Асинхронные колбэки;
+    * Таймеры;
+    * Event Loop;
+    * Promise;
   - Работа с API:
-    1. Протокол HTTP;
-    2. Запросы из JavaScript;
-    3. Формат JSON;
-    4. HTTP-запрос и ответ;
-    5. Инструменты: вкладка Network;
+    * Протокол HTTP;
+    * Запросы из JavaScript;
+    * Формат JSON;
+    * HTTP-запрос и ответ;
+    * Инструменты: вкладка Network;
   - Прототипы объектов:
-    1. Свойство __proto__;
-    2. Метод Object.create;
-    3. Оператор new;
-    4. Свойство prototype;
-    5. Встроенные конструкторы и их прототипы;
-    6. Прототипное наследование;
+    * Свойство __proto__;
+    * Метод Object.create;
+    * Оператор new;
+    * Свойство prototype;
+    * Встроенные конструкторы и их прототипы;
+    * Прототипное наследование;
 
 **3. Ссылки на сторонние ресурсы для верстки сайта**
 
@@ -181,140 +181,140 @@
 
 **During 4 sprints, the following methods were studied and applied:**
   - Introduction to DOM:
-    1. Selection of elements;
-    2. Attributes and their methods;
-    3. Working with attributes via built-in properties;
-    4. Manipulations with CSS classes;
-    5. .innerHTML and .textContent properties;
-    6. Events;
-    7. Flexible insertion: insertAdjacentHTML and insertAdjacentText methods.
+    * Selection of elements;
+    * Attributes and their methods;
+    * Working with attributes via built-in properties;
+    * Manipulations with CSS classes;
+    * .innerHTML and .textContent properties;
+    * Events;
+    * Flexible insertion: insertAdjacentHTML and insertAdjacentText methods.
   - JavaScript debugging:
-    1. How to read errors;
-    2. Types of errors;
-    3. Logical errors and console.log;
-    4. Debugging via debugger.
+    * How to read errors;
+    * Types of errors;
+    * Logical errors and console.log;
+    * Debugging via debugger.
   - Git:
-    1. Conflicts;
-    2. Canceling branch merges;
-    3. The perfect commit;
-    4. We hide the uncomplicated changes.
+    * Conflicts;
+    * Canceling branch merges;
+    * The perfect commit;
+    * We hide the uncomplicated changes.
 
 **During the 5th sprint, the methods were studied and applied:**
   - Creating, adding and deleting elements in the DOM:
-    1. Creating elements: createElement and createTextNode;
-    2. Adding elements to the page. Append, prepend, before, after, and replaceWith methods;
-    3. Removing and moving elements. Remove and closest methods;
-    4. Cloning of elements. cloneNode method;
-    5. template elements;
-    6. Event object. addEventListener method - event object, target property;
-    7. Kinship relationships in DOM: parentElement, children, firstElementChild and lastElementChild properties, previousElementSibling and nextElementSibling.
+    * Creating elements: createElement and createTextNode;
+    * Adding elements to the page. Append, prepend, before, after, and replaceWith methods;
+    * Removing and moving elements. Remove and closest methods;
+    * Cloning of elements. cloneNode method;
+    * template elements;
+    * Event object. addEventListener method - event object, target property;
+    * Kinship relationships in DOM: parentElement, children, firstElementChild and lastElementChild properties, previousElementSibling and nextElementSibling.
   - Arrays:
-    1. Combining and converting to a string. The concat method. The join method.
-    2. Adding and removing
-    3. Adding and removing the first element: method shift, unshift;
-    4. Managing elements at any positions: slice, splice method.
-    5. Collections in the DOM. Array.from method;
-    6. Iterating over an array. forEach and map methods;
-    7. Callback functions and their 3 arguments;
-    8. Selection of array elements: filter, some, every, find method;
+    * Combining and converting to a string. The concat method. The join method.
+    * Adding and removing
+    * Adding and removing the first element: method shift, unshift;
+    * Managing elements at any positions: slice, splice method.
+    * Collections in the DOM. Array.from method;
+    * Iterating over an array. forEach and map methods;
+    * Callback functions and their 3 arguments;
+    * Selection of array elements: filter, some, every, find method;
     9. Flattening an array. reduce method. sort method
     10. Imperative and declarative programming;
   - Git:
-    1. Merge tools;
-    2. SSH repetition;
+    * Merge tools;
+    * SSH repetition;
 
 **During Sprint 6 the following methods were studied and applied:**
   - Objects:
-    1. Creating objects and writing properties;
-    2. Access to the property;
-    3. Operators: delete, in;
-    4. Enumeration of properties. for...in loop. Object.entries, Object.keys and Object.values;
-    5. Passing by reference. Comparison of objects. Surface and deep copying of objects;
-    6. Arrays are objects. Functions are objects;
+    * Creating objects and writing properties;
+    * Access to the property;
+    * Operators: delete, in;
+    * Enumeration of properties. for...in loop. Object.entries, Object.keys and Object.values;
+    * Passing by reference. Comparison of objects. Surface and deep copying of objects;
+    * Arrays are objects. Functions are objects;
   - Event handling:
-    1. Keyboard events. The event object is the keyboard. The event object is the mouse;
-    2. Removing the listener;
-    3. Cancellation of the standard behavior of the browser;
-    4. Bubbling and delegation of events. Cancel ascent;
+    * Keyboard events. The event object is the keyboard. The event object is the mouse;
+    * Removing the listener;
+    * Cancellation of the standard behavior of the browser;
+    * Bubbling and delegation of events. Cancel ascent;
   - Working with forms:
-    1. Access to the form from JavaScript;
-    2. Submitting the form. submit event;
-    3. Getting form elements;
-    4. Change and input events;
-    5. Methods reset and submit;
+    * Access to the form from JavaScript;
+    * Submitting the form. submit event;
+    * Getting form elements;
+    * Change and input events;
+    * Methods reset and submit;
   - Form validation:
-    1. Built-in browser form validation;
-    2. Validation with JavaScript;
-    3. Associate JS validation methods with DOM;
-    4. Validation of several fields and forms;
-    5. Interaction with other DOM elements;
+    * Built-in browser form validation;
+    * Validation with JavaScript;
+    * Associate JS validation methods with DOM;
+    * Validation of several fields and forms;
+    * Interaction with other DOM elements;
 
 **During Sprint 7 the following methods were studied and applied:**
   - Object-oriented programming:
-    1. Objects in OOP;
-    2. Classes;
-    3. Brief dive into this;
-    4. Encapsulation;
-    5. Inheritance;
-    6. Polymorphism;
+    * Objects in OOP;
+    * Classes;
+    * Brief dive into this;
+    * Encapsulation;
+    * Inheritance;
+    * Polymorphism;
   - OOP in interfaces:
-    1. Markup template inside the class;
-    2. Adding data to the markup and placement in the DOM;
-    3. Preparing the class for scaling;
-    4. Event handlers;
+    * Markup template inside the class;
+    * Adding data to the markup and placement in the DOM;
+    * Preparing the class for scaling;
+    * Event handlers;
   - Modules in JS:
-    1. IIFE;
-    2. Encapsulation and modules;
-    3. What is a module and how to use it;
-    4. Directives export and import;
-    5. Features of the modules in the browser;
+    * IIFE;
+    * Encapsulation and modules;
+    * What is a module and how to use it;
+    * Directives export and import;
+    * Features of the modules in the browser;
 
 **During Sprint 8 the following methods were studied and applied:**
   - Destructuring:
-    1. Destructuring of objects;
-    2. Destructuring the array;
-    3. Function parameters;
-    4. Parameters of a method or class constructor;
-    5. Default values;
+    * Destructuring of objects;
+    * Destructuring the array;
+    * Function parameters;
+    * Parameters of a method or class constructor;
+    * Default values;
   - OOP in interfaces:
-    1. Structure of files in the project;
-    2. Creation of several classes;
-    3. Layers in the project;
-    4. Description of relationships between classes;
-    5. Working with event listeners;
+    * Structure of files in the project;
+    * Creation of several classes;
+    * Layers in the project;
+    * Description of relationships between classes;
+    * Working with event listeners;
   - Binding this:
-    1. Ways to bind this;
-    2. bind method;
+    * Ways to bind this;
+    * bind method;
   - Assembly of the project. webpack:
-    1. NPM package library;
-    2. We connect the NPM repository;
-    3. Set up the assembly. Set up webpack
-    4. Install Babel;
-    5. Set up HTML processing;
-    6. Set up the processing of images and fonts;
-    7. Set up CSS processing;
-    8. Minifying CSS and adding prefixes;
+    * NPM package library;
+    * We connect the NPM repository;
+    * Set up the assembly. Set up webpack
+    * Install Babel;
+    * Set up HTML processing;
+    * Set up the processing of images and fonts;
+    * Set up CSS processing;
+    * Minifying CSS and adding prefixes;
 
 **During Sprint 9 the following methods were studied and applied:**
   - Asynchronous operations:
-    1. Callbacks;
-    2. Asynchronous callbacks;
-    3. Timers;
-    4. Event Loop;
+    * Callbacks;
+    * Asynchronous callbacks;
+    * Timers;
+    * Event Loop;
     5 Promise;
   - Working with API:
-    1. HTTP protocol;
-    2. Requests from JavaScript;
-    3. JSON format;
-    4. HTTP request and response;
-    5. Tools: Network tab;
+    * HTTP protocol;
+    * Requests from JavaScript;
+    * JSON format;
+    * HTTP request and response;
+    * Tools: Network tab;
   - Prototypes of objects:
-    1. Property __proto__;
-    2. Method Object.create;
-    3. Operator new;
-    4. Prototype property;
-    5. Built-in constructors and their prototypes;
-    6. Prototype inheritance;
+    * Property __proto__;
+    * Method Object.create;
+    * Operator new;
+    * Prototype property;
+    * Built-in constructors and their prototypes;
+    * Prototype inheritance;
 
 **3. Links to third-party resources for site layout**
 
@@ -344,3 +344,5 @@
 
   **Famicon**
   [Website Link](https://favicon.io/favicon-generator/)
+
+**4. No updates planned for the near future**
