@@ -1,8 +1,8 @@
-                        **Для русскоязычных пользователей**
+**Для русскоязычных пользователей**
 
 **1. Название проекта** - "Проект: Место". 4-9 спринты, Проектная работа №4-9.
 
-**2. Назначение** - Данный проект используется для закрепленния теоритеческого материала в программе обучения ЯндексПрактикума "Веб-разработчик". В результате выполнения ПР4-ПР8 из макетов FIGMA был сверстан адаптивный сайт, который в последующем был запушен на GITHAB и с помощью Diploy выложен в публичный доступ - [Ссылка на сайт] - (https://nevedomskiy.github.io/mesto/)
+**2. Назначение** - Данный проект используется для закрепленния теоритеческого материала в программе обучения ЯндексПрактикума "Веб-разработчик". В результате выполнения ПР4-ПР9 из макетов FIGMA был сверстан адаптивный сайт, который в последующем был запушен на GITHAB и с помощью Diploy выложен в публичный доступ - [Ссылка на сайт] - (https://nevedomskiy.github.io/mesto/)
 
 **Во время 4 спринта были изучены и применены методы:**
   - Знакомство с DOM:
@@ -177,7 +177,7 @@
 
 **1. Project name** - "Project: Location". 4-9 sprints, Project work No. 4-9.
 
-**2. Purpose** - This project is used to consolidate theoretical material in the training program of the Yandex Practice "Web Developer". As a result of the execution of PR4-PR8, an adaptive site was created from FIGMA layouts, which was subsequently launched on GITHAB and made publicly available using Diploy - [Link to the site] - (https://nevedomskiy .github.io/mesto/)
+**2. Purpose** - This project is used to consolidate theoretical material in the training program of the Yandex Practice "Web Developer". As a result of the execution of PR4-PR9, an adaptive site was created from FIGMA layouts, which was subsequently launched on GITHAB and made publicly available using Diploy - [Link to the site] - (https://nevedomskiy .github.io/mesto/)
 
 **During 4 sprints, the following methods were studied and applied:**
   - Introduction to DOM:
