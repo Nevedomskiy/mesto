@@ -1,5 +1,18 @@
 **Для русскоязычных пользователей**
 
+**0. О себе**
+Здравстуйте! Меня зовут Василий, 24 года, город Саратов. Последний год занимаюсь веб-программированием. Веб-разработка очень разнообразна и увлекательна, на сегодняшний день успел применить на практике адаптивную верстку(HTML,CSS), JS, принципы ООП, настройку валидации форм, настройку и сборку проекта WEBPACK-ом, работал c React-ом, контроль версий выполняю с помощью Git-а.
+Для меня важно, чтобы результат моей работы приносил пользу, а опыт полученный при её выполнении был релевантен и востребован.
+Моя мотивация - это желание своими решениями и упорной работой, добиться интеллектуального роста и благополучия.
+
+Открыт к общению и предложениям по работе:
+-Телефон +79170282770
+-Телеграмм https://t.me/VasiliyNevedomskiy
+-Вотсап https://wa.me/qr/HDTMZCGIFVF2N1
+
+Резюме - https://saratov.hh.ru/resume/1309bbf3ff0be5c57f0039ed1f636655475242
+
+
 **1. Название проекта** - "Проект: Место". 4-9 спринты, Проектная работа №4-9.
 
 **2. Назначение** - Данный проект используется для закрепленния теоритеческого материала в программе обучения ЯндексПрактикума "Веб-разработчик". В результате выполнения ПР4-ПР9 из макетов FIGMA был сверстан адаптивный сайт, который в последующем был запушен на GITHAB и с помощью Diploy выложен в публичный доступ - [Ссылка на сайт] - (https://nevedomskiy.github.io/mesto/)
@@ -173,7 +186,19 @@
 **4. В ближайшее время доработок не планируется**
 
 
-                                **English-speaking**
+**English-speaking**
+
+**0. About me**
+Hello there! My name is Vasily, 24 years old, Saratov city. I've been doing web programming for the last year. Web development is very diverse and fascinating, to date I have managed to put into practice adaptive layout (HTML, CSS), JS, OOP principles, form validation setup, WEBPACK project setup and assembly, worked with React, I perform version control using Git.
+It is important for me that the result of my work is beneficial, and the experience gained during its implementation is relevant and in demand.
+My motivation is the desire to achieve intellectual growth and well-being through my decisions and hard work.
+
+I am open to communication and job offers:
+-Phone +79170282770
+- Telegrams https://t.me/VasiliyNevedomskiy
+-Votsap https://wa.me/qr/HDTMZCGIFVF2N1
+
+Summary - https://saratov.hh.ru/resume/1309bbf3ff0be5c57f0039ed1f636655475242
 
 **1. Project name** - "Project: Location". 4-9 sprints, Project work No. 4-9.
 
